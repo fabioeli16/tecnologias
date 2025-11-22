@@ -1,0 +1,12 @@
+.caja1{
+    background-color: aquamarine;
+    width: 40VW;
+
+}
+
+
+.caja2{
+    background-color: gray;
+    width: 80VW;
+    justify-content: center;
+}
