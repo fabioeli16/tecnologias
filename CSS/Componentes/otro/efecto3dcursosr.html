@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Tilt Effect</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d1117;
+    font-family: Arial, sans-serif;
+  }
+
+  .tilt-card {
+    width: 340px;
+    height: 220px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 18px;
+    box-shadow: 0 8px 35px rgba(0,0,0,0.45);
+    backdrop-filter: blur(10px);
+    transition: transform .12s cubic-bezier(.2, .9, .2, 1);
+    will-change: transform;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="tilt-card">
+  3D Tilt Card
+</div>
+
+<script>
+  const card = document.querySelector('.tilt-card');
+
+  window.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+
+    const dx = (e.clientX - cx) / rect.width; 
+    const dy = (e.clientY - cy) / rect.height;
+
+    const rotX = clamp(-dy * 12, -15, 15);
+    const rotY = clamp(dx * 12, -15, 15);
+
+    card.style.transform =
+      `perspective(900px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateZ(8px)`;
+  });
+
+  window.addEventListener('mouseleave', () => {
+    card.style.transform = "";
+  });
+
+  function clamp(v, min, max) {
+    return Math.max(min, Math.min(max, v));
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+/*POPPINS FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    --color-principal:#222327;
+    --color-barra:#fff;
+    --color-secundario:#29fd53;
+    --transition-1:0.5s;
+
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-principal);
+}
+
+.navigation{
+    position: fixed;
+    top: 80%;
+
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--color-barra);
+    border-radius: 10px;
+}
+    .navigation ul{
+        position: relative;
+        display: flex;
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+        .navigation ul li{
+            position: relative;
+            list-style: none;
+            width: 70px;
+            height: 70px;
+
+            z-index: 1;
+        }
+            .navigation ul li a{
+                position: relative;
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-weight: 500;
+            }
+                .navigation ul li a .icon{
+                    position: relative;
+                    transition:var(--transition-1);
+
+                    display: block;
+                    text-align: center;
+                    font-size: 1.5em;
+                    line-height: 75px;
+                    color: var(--color-principal);
+
+                }
+                .navigation ul li.active a .icon{
+                    transform: translateY(-32px);
+                }
+
+                .navigation ul li a .text{
+                    position: absolute;
+                    opacity: 0;
+                    transition: var(--transition-1);
+                    transform: translateY(20px);
+                    
+                    color: var(--color-principal);
+                    font-weight: 400;
+                    font-size: 0.75em;
+                    letter-spacing: 0.05em;
+                }
+                .navigation ul li.active a .text{
+                    transform: translateY(10px);
+                    opacity: 1;
+
+                }
+
+.indicator{
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    width: 70px;
+    height: 70px;
+
+    transition: var(--transition-1);
+
+    background-color: var(--color-secundario);
+    border-radius: 50%;
+    border: 6px solid var(--color-principal);
+}
+
+
+
+    .indicator::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -22px;
+        width: 20px;
+        height: 20px;
+
+        transition: var(--transition-1);
+
+        background-color: var(--color-barra);
+        border-radius: 0px 20px 0px 0px;
+        box-shadow: 0px -10px 0 0 var(--color-principal);
+
+    }
+    .indicator::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -22px;
+        width: 20px;
+        height: 20px;
+
+        transition: var(--transition-1);
+
+        background-color: var(--color-barra);
+        border-radius: 20px 0px 0px 0px;
+        box-shadow: 0px -10px 0 0 var(--color-principal);
+
+    }
+
+    .navigation ul li:nth-child(1).active ~ .indicator{
+        transform:translateX(calc(70px * 0));
+        
+    }
+    .navigation ul li:nth-child(2).active ~ .indicator{
+        transform:translateX(calc(70px * 1));
+        
+    }
+    .navigation ul li:nth-child(3).active ~ .indicator{
+        transform:translateX(calc(70px * 2));
+        
+    }
+    .navigation ul li:nth-child(4).active ~ .indicator{
+        transform:translateX(calc(70px * 3));
+        
+    }
+    .navigation ul li:nth-child(5).active ~ .indicator{
+        transform:translateX(calc(70px * 4));
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.elemento{
+                posicion/tamaño
+                comportamiento
+                contenido
+
+}
+*/
