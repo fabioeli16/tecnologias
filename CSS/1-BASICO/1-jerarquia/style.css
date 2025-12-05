@@ -1,0 +1,52 @@
+/* Especificidad: 0 */
+* {
+  color: gray;
+}
+
+/* Selector por etiqueta (especificidad: 1) */
+h1 {
+  color: blue;
+}
+
+/* Selector por clase (especificidad: 10) */
+.titulo {
+  color: green;
+}
+
+/* Selector por dos clases (10 + 10 = 20) */
+.titulo.destacado {
+  color: orange;
+}
+
+/* Selector por ID (especificidad: 100) */
+#titulo-principal {
+  color: red;
+}
+
+/* Selector menos específico pero con !important  (∞ + 10)*/
+h1.titulo{
+  color: aquamarine !important;
+}
+
+/* Selector menos específico pero con !important (∞)*/
+h1 {
+  color: purple !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+p {
+  color: red;   /* especificidad 1 */
+}
+
+p {
+  color: blue;  /* especificidad 1 */
+}

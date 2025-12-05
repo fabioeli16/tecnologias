@@ -1,0 +1,33 @@
+/* Bloque */
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Modificador de bloque */
+.card--primary {
+  border-color: blue;
+}
+
+/* Elementos del bloque */
+.card__title {
+  font-size: 20px;
+}
+
+.card__text {
+  font-size: 14px;
+}
+
+/* Bloque independiente */
+.button {
+  background: #eee;
+  padding: 10px 15px;
+}
+
+/* Modificador de bloque */
+.button--large {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: 2px solid #808080;    /* borde sólido gris (puedes usar hex, rgb o nombre) */
+  border-radius: 10px;  
+}

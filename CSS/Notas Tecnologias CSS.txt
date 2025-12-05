@@ -1,0 +1,116 @@
+
+
+BASICO
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++GERARQUIA Y ESPECIFICIDAD
+
+-GERARQUIA
+*La jerarquía (cascade) define el orden final considerando: especificidad, importancia (!important), origen de la hoja, e incluso el orden del código.
+
+-ESPECIFICIDAD
+*La especificidad en CSS es el sistema que usa el navegador para decidir qué regla tiene más peso cuando dos o más reglas afectan al mismo elemento.
+
+
+-IMPORTANT
+*Un selector con !important gana sobre cualquier otro selector, excepto otro !important con más especificidad. Evítalo si es posible porque dificulta el mantenimiento.
+
+
+| Selector                        | Fuerza                 |
+| ------------------------------- | -----------------------|
+| `!important` + ESPECIFICACION   | rompe todo             |
+| `!important`                    | rompe todo             |
+| Inline                          | muy fuerte (1000)      |
+| ID                              | fuerte (100)           |
+| Clase, atributos, pseudo-clases | medio (10)             |
+| Etiquetas, pseudo-elementos     | débil (1)              |
+| `*`                             | muy débil (0)          |
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++METODOLOGIAS
+
+-------------------------------------------
+-BEM
+La metodología BEM significa:
+Block
+Element
+Modifier
+
+-------------------------------------------
+Utility-first (como Tailwind CSS)
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++UNIDADES
+-Son simbolos que acompañan los valores de una propiedad, cuya funbcion es especificar el formato de dichos valores
+-Hay dos grandes tipos de unidades: absolutas y relativas.
+-Dentro de las relativas existe otra clasificacion: tamaño, pantalla y contenedor
+
+-ABSOLUTAS
+| Unidad | Significado             | Ejemplo            |
+| ------ | ----------------------- | ------------------ |
+| **px** | píxeles                 | `width: 200px;`    |
+| **cm** | centímetros             | `margin: 1cm;`     |
+| **mm** | milímetros              | `margin: 5mm;`     |
+| **in** | pulgadas (1in = 2.54cm) | `width: 2in;`      |
+| **pt** | puntos (1pt = 1/72in)   | usado en impresión |
+| **pc** | picas (1pc = 12pt)      |                    |
+
+-RELATIVAS:
+*Unidades Relativas AL TAMAÑO
+| Unidad  | Depende de                          | Ejemplo             |
+| ------- | ----------------------------------- | ------------------- |
+| **em**  | tamaño de fuente del elemento padre | `font-size: 1.5em;` |
+| **rem** | tamaño de fuente del `html` (raíz)  | `font-size: 2rem;`  |
+
+*Relativas al Viewport (pantalla)
+| Unidad   | Significado               | Ejemplo             |
+| -------- | ------------------------- | ------------------- |
+| **vw**   | 1% del ancho del viewport | `width: 50vw;`      |
+| **vh**   | 1% del alto del viewport  | `height: 100vh;`    |
+| **vmin** | el menor entre vw y vh    | diseños responsivos |
+| **vmax** | el mayor entre vw y vh    |                     |
+
+
+*Relativas al tamaño del contenedor
+| Unidad | Significado                          |
+| ------ | ------------------------------------ |
+| **%**  | porcentaje del tamaño del contenedor |
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++NORMALIZAR
+-Normalizar en CSS es el proceso de unificar y corregir los estilos por defecto que traen los navegadores
+-para que una página web se vea igual o lo más similar posible en Chrome, Firefox, Edge, Safari, etc.
+-Cada navegador tiene sus propios estilos base
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
