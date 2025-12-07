@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Modals Locos</title>
+	<style>
+		.borde{
+			background-color: gray; 
+			text-align: center;
+			height: 150px;
+		}			
+		.borde1{
+			background-color: orange; 
+			text-align: center;
+			height: 150px;
+		}	
+		.borde2{
+			background-color: aquamarine; 
+			text-align: center;
+			height: 150px;
+		}	
+		.borde3{
+			background-color: olivedrab; 
+			text-align: center;
+			height: 150px;
+		}	
+
+	</style>
+</head>
+<body>
+
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal">Mostrar</button>
+
+
+
+	<!------------------------------MODAL--------------------------------->
+	<div class="modal fade" id="miModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				
+
+
+				<div class="modal-header">
+					<h4>Cabecera</h4>
+
+				</div>
+				<div class="modal-body">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, totam rerum dolores placeat, ullam nostrum repellat iste fugiat deserunt natus ea quas. Quisquam voluptatem beatae ratione aspernatur magni doloribus maiores?
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

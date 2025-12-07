@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor_principal{
+	background-color: orange;
+	border: 10px solid red;
+	width: 40vw;
+	height: 600px;
+	margin: 10px auto;
+	padding: 0px;
+
+	position: relative;
+
+}
+
+.caja{
+	width: 100px;
+	height: 100px;
+	margin:0px;
+	text-align: center;
+
+	position: absolute;
+}
+
+.caja.primera{
+	background-color: darkgrey;
+	border: none;
+	left:0%;
+
+}
+
+
+
+
+.caja.segunda{
+	background-color: blue;
+	border: none;
+	left:100px;
+
+}
+
+
+.caja.tercera{
+	background-color: white;
+	width: 80%;
+	border: none;
+	top:50%;
+	margin: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor_principal2{
+	background-color: aqua;
+	border: 10px solid grey;
+	height: 600px;
+	margin: 10px auto;
+	padding: 0px;
+
+	display: flex;
+	flex-direction: row;             /*VALOR POR DEFECTO*/
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+.caja1{
+	width: 450px;
+	height: 150px;
+	background-color: blue;
+	margin-right: auto;
+	margin-left: auto;
+	margin:auto;
+
+		text-align: center;
+		justify-content: center;
+
+}
+
+
+
+
+
+
+

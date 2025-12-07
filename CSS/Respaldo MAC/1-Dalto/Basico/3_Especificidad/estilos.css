@@ -1,0 +1,40 @@
+p { color: red;}
+p{	color: red;	}
+p{	color: blue;}
+
+
+
+
+
+/*GERARQUIA SUPERIOR---------------------*/
+h1{
+	color:orange !important;
+}
+
+
+
+/*GERARQUIA MAYOR*/
+#primer-titulo{
+	color: blue;
+}
+
+
+
+
+/*GERARQUIA INTERMEDIO---------------------*/
+.titulo{
+	color:gray;
+}
+[miAtributo="zzz"]{
+	color:pink;
+
+}
+
+
+
+
+
+/*GERARQUIA BAJA--------------------------*/
+h1{
+	color:red;
+}

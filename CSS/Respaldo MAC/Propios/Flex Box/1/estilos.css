@@ -1,0 +1,49 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.flexContainer{
+	background-color: lightblue;
+	display: flex;
+	flex-direction: row;					/*valor por defecto*/		/*Posicionamiento cajas hijas*/
+	flex-wrap: wrap;													/*Flexibilidad de las cajas hijas*/
+}
+
+
+
+.flexItem{
+	background-color: gray;
+	margin: 5px;
+	width: 300px;
+	height: 300px;
+}
+
+
+
+
+
+
+
+
+
+.flexContainer2{
+	background-color: lightgray;
+	width: 20vw;
+	height: 500px;
+	display: flex;	
+	flex-direction: row;					
+	overflow: hidden;
+}
+
+
+
+.flexItem2{
+	width: 100px;
+	height: 250px;
+	margin: 2px;
+	margin-right: 10px;
+	text-align: center;
+	background-color: lightblue;
+
+}

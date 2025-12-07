@@ -1,0 +1,36 @@
+
+*{
+
+	font-family: 'The Nautigal', cursive;
+	font-weight: 100;
+	font-size: 25px;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+.contenedor div{
+	display: inline-block;
+}
+
+
+		.uno{
+			width: 70%;
+			background: red;
+		}
+
+
+
+		.dos{
+			width: 30%;
+			background: blue;
+		}
+
+

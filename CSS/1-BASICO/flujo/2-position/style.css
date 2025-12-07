@@ -1,0 +1,106 @@
+
+
+.centro {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #f00;
+  position: relative;
+  margin: 100px auto;
+}
+
+.orbita {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: girar 3s linear infinite;
+
+    background-color: rgba(0, 0, 0,0.1);
+}
+
+.satélite {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #00f;
+  position: absolute;
+
+  /* Ubicación inicial del circulito */
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body{
+    border: 5px solid tomato;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: antiquewhite;
+}
+
+
+.caja{
+    box-sizing: border-box;
+}
+
+.caja--principal{
+    width: 600px;
+    height: 600px;
+
+    margin: auto;
+    background-color: aliceblue;
+
+
+}
+
+.caja--padre{
+    position: relative;
+    width: 600px;
+    height: 600px;
+
+    background-color: gray;
+    border-radius: 50%;
+
+}
+
+.caja--hija{
+    position: absolute;
+    top: 50%;
+    right: 100%;
+
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+
+    border-radius: 50%;
+}
+*/

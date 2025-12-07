@@ -1,0 +1,20 @@
+
+*{
+
+	font-family: 'The Nautigal', cursive;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+body{
+	padding-top: 100px;
+}
+
+
+.caja-fixed{
+	background-color: orange;
+	position:fixed;
+	margin:-100px;
+	opacity: 0.7;
+}
+

@@ -1,0 +1,48 @@
+.contenedorTabla{
+
+
+}
+
+
+
+
+
+
+
+
+
+.contenedor-menu{
+	display:inline-block;
+	position:absolute;
+	top:0px;
+	left:0px;
+
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    background-color: #f7fafc;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.contenedor-menu-oculto{
+	display:none;
+}
+
+.container__menu {
+    position: absolute;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f7fafc;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.container__menu--hidden {
+    display: none;
+}

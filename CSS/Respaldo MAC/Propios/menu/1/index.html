@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu 1</title>
+	<link rel="stylesheet" href="misEstilos.css">
+</head>
+
+<body>
+	<!--
+	<div id="contenedor">
+		<p id="miMenuContexto">Presiona aqui para desplegar menu</p>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nesciunt deserunt, minus voluptas labore, repudiandae. Sed iure suscipit tempora, dolores ipsa, explicabo modi assumenda corrupti illum necessitatibus laboriosam voluptates tenetur.</p>
+	    <ul id="menu" class="container__menu container__menu--hidden">
+	    	<li>op1</li>
+	    	<li>op2</li>
+	    	<li>op3</li>
+	    </ul>		
+	</div>
+-->
+	<div id="contenedorTabla">
+		<table border="2">
+			<thead class="cabecera">
+				<tr>
+					<th>Columna 1 </th>
+					<th>Columna 2 </i></th>
+					<th>Columna 3</th>
+					<th>Columna 4</th>
+					<th>Columna 5</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>celda 1</td>
+					<td>celda 1</td>
+					<td>celda 1</td>
+					<td>celda 1</td>
+					<td>celda 1</td>
+				</tr>				
+				<tr>
+					<td>celda 1</td>
+					<td>celda 1</td>
+					<td>celda 1</td>
+					<td>celda 1</td>
+					<td>celda 1</td>
+				</tr>				
+				<tr>
+					<td>celda 1</td>
+					<td>celda 1</td>
+					<td>celda 1</td>
+					<td>celda 1</td>
+					<td>celda 1</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<div id="menu" class="contenedor-menu contenedor-menu-oculto">
+		<ul>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+		/*
+		document.addEventListener("DOMContentLoaded",()=>{
+			const contenedor = document.getElementById('contenedor');
+			const nuevoContexto = document.getElementById('miMenuContexto');
+			const menu = document.getElementById('menu');
+
+			nuevoContexto.addEventListener('contextmenu', e => {
+	  			e.preventDefault();
+				const rect = contenedor.getBoundingClientRect();
+	            const x = e.clientX - rect.left;
+	            const y = e.clientY - rect.top;
+
+	            menu.style.top = `${y}px`;
+	            menu.style.left = `${x}px`;
+	            menu.classList.toggle('container__menu--hidden');
+
+	           document.addEventListener('click', documentClickHandler);
+			});
+		});
+
+
+
+		const documentClickHandler = function (e) {
+            const isClickedOutside = !menu.contains(e.target);
+            if (isClickedOutside) {
+            menu.classList.add('container__menu--hidden');
+                document.removeEventListener('click', documentClickHandler);
+            }
+        };
+        */
+
+	</script>
+	
+
+
+	<script src="codigo.js"></script>
+
+</body>
+</html>

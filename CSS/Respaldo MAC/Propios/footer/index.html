@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="misEstilos.css">
+	<title>Pie de pagina</title>
+</head>
+<body>
+
+
+	<section class="contacto">
+
+
+		<div class="contenedorFlex">
+			<div class="filaInfo">			
+				<div class="columna">
+					<h2>Informacion de contacto</h2>
+					<ul class="info">
+						<li>
+							<span><img src="imagenes/mail.png" alt=""></span>
+							<span>Ejemplo@hotmail.com</span>
+						</li>
+						<li>
+							<span><img src="imagenes/call.png" alt=""></span>
+							<span>320-686-98-33</span>
+						</li>
+					</ul>
+				</div>
+				<div class="columna">
+					<ul class="redes">
+						<li><a href="#"><img src="imagenes/1.png" alt=""></a></li>
+						<li><a href="#"><img src="imagenes/2.png" alt=""></a></li>
+						<li><a href="#"><img src="imagenes/3.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="filaFormulario">
+				<form action="prueba.php" method="post">
+					<div class="columnaForm">
+						<h2>Contactanos</h2>
+					</div>
+					<div class="columnaForm contenedorInputsFlex">
+						<div class="filaInputGrupo">
+							<input type="input" class="miInput" placeholder="Nombre" id='nombreContacto' name='nombreContacto'required />
+							<label class="labelContacto">Nombre</label>
+						</div>
+						<div class="filaInputGrupo">
+							<input type="input" class="miInput" placeholder="correo" id='correoContacto' name='correoContacto' required />
+							<label  class="labelContacto">Correo</label>
+						</div>				
+					</div>
+					<div class="columnaForm contenedorInputsFlex">
+						<div class="filaInput">
+							<input type="input" class="miInput" placeholder="asunto" id='asuntoContacto' name='asuntoContacto' required />
+							<label class="labelContacto">Asunto</label>
+						</div>	
+					</div>
+					<div class="columnaForm contenedorInputsFlex">
+						<div class="filaInput">
+							<textarea class="miInput mitextArea" placeholder="mensaje" id='mensajeContacto' name='mensajeContacto' required>
+							</textarea>
+							<label class="labelContacto">Mensaje</label>
+						</div>					
+					</div>
+					<div class="columnaForm contenedorInputsFlex">
+						<div class="filaBtnFlex">
+							<input class="btnEnviar" type="submit" id="enviar" name="enviar">
+						</div>					
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	
+</body>
+</html>

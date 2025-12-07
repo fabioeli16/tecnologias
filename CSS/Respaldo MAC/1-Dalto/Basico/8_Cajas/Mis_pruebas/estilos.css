@@ -1,0 +1,48 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.contact-form{
+	width: 50VW;
+	height: 400px;
+	background-color: BLUE;
+
+}
+
+
+
+
+
+.contact-form_div-interior{
+	background-color: GRAY;
+
+}
+
+
+		.contact-form__h2{
+			background-color: ORANGE;
+
+		}
+
+
+.contact-form_div-interior-2{
+	width: 55%;
+	height: 100px;
+	background-color: black;
+
+}
+
+
+
+
+.contact-form_div-interior-3{
+
+
+}
+
+
+
+
+

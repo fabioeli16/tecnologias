@@ -1,0 +1,297 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+
+
+.contacto{
+	width: 100vw;
+	background-color: blue;
+}
+.contenedorFlex{
+	width: 100vw;
+
+	display: flex;		
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	background-color: aqua;
+}
+.filaInfo{
+	width: 35%;
+	background-color: orange;
+	border: 1px solid gray;
+
+	padding: 10px;
+	display: flex;		
+	flex-direction: column;
+	justify-content: space-between;
+}
+.columna{
+	width: 100%;
+	background-color:gray;
+	border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+.filaFormulario{
+	width: 65%;
+	background-color: orange;
+	border: 1px solid gray;
+
+	padding: 10px;
+	display: flex;		
+	flex-direction: column;
+}
+
+.columnaForm{
+	
+
+	width: 100%;
+	background-color:gray;
+	border: 1px solid red;
+	/*margin-bottom: 40px;*/
+
+}
+
+.filaFormulario .columnaForm h2{
+	color: white;
+	margin: 25px;
+
+}
+
+
+
+
+
+
+.filaInfo .columna h2{
+	color: white;
+	margin: 25px;
+
+}
+
+.filaInfo .columna ul.info{
+	position: relative;
+	margin: 25px 0;
+}
+
+.filaInfo .columna ul.info li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 25px;
+	cursor:pointer;
+	align-items: flex-start;
+}
+
+
+
+.filaInfo .columna ul.info li span:nth-child(1){
+	width: 30px;
+	min-width: 30px;
+
+}
+
+.filaInfo .columna ul.info li span:nth-child(1) img{
+	max-width: 100%;
+	filter: invert(1);
+
+}
+
+.filaInfo .columna ul.info li span:nth-child(2){
+	margin-left: 10px;
+	font-weight: 300;
+	color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filaInfo .columna ul.redes{
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+.filaInfo .columna ul.redes li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	padding:0px 20px;
+	cursor:pointer;
+	align-items: flex-start;
+}
+
+
+
+
+/*INPUTS------------------------------------------------------------*/
+.contenedorInputsFlex{
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	justify-content: space-between;
+}
+
+.contenedorInputsFlex div{
+	margin: 0px 25px;	
+}
+
+
+
+.filaInputGrupo {
+	position: relative;
+	padding-top: 6px;
+	padding-bottom: 14px;
+	width: 40%;
+  }
+.filaInput{
+	position: relative;
+	padding-top: 6px;
+	padding-bottom: 14px;
+	width: 100%;
+}
+
+.miInput{
+	font-family: inherit;
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid #9b9b9b;
+	outline: 0;
+	font-size: 1.3rem;
+	padding: 7px 0px;
+	transition: border-color 0.2s;
+  }
+  
+  
+  
+  .miInput::placeholder {
+	color: transparent;
+  }
+  .miInput:placeholder-shown ~ .labelContacto {
+	font-size: 1.3rem;
+	cursor: text;
+	top: 20px;
+  }
+  
+  .labelContacto {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: #9b9b9b;
+  }
+  
+  .miInput:focus {
+	padding-bottom: 6px;
+	font-weight: 700;
+	border-width: 3px;
+	border-image: linear-gradient(to right, #11998e, #38ef7d);
+	border-image-slice: 1;
+  }
+  
+  
+  /*DESPLAZA EL LABEL*/
+  .miInput:focus ~ .labelContacto {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: #11998e;
+	font-weight: 700;
+  
+  }
+  
+
+  /* reset input */
+  .miInput:required, .miInput:invalid {
+	box-shadow: none;
+  }
+  
+
+
+.mitextArea{
+	resize: none;
+	height: 120px;
+}
+
+
+
+
+
+
+.filaBtnFlex {
+	position: relative;
+	width: 100%;
+	padding-top: 6px;
+
+}
+
+.btnEnviar{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 20px
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+	.contenedorFlex{
+			flex-direction: column-reverse;
+
+		flex-wrap: wrap;
+	}
+
+	.filaInfo{
+		width: 100%;
+	}
+
+	.filaFormulario{
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+

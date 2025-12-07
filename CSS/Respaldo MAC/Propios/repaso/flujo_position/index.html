@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flujo o posicion</title>
+	<style>
+		body{
+			margin: auto;
+			padding: 0px;
+		}
+		.vacio{
+			height: 254px;
+			background-color: gray;
+		}
+		.contenedor{
+			/*position: relative;*/
+		}
+		.caja{
+			display:block;
+			width: 250px;
+			height: 250px;
+			background-color: blue;
+			border: black 2px solid;
+			text-align: center;
+			font-size: 25px;
+		}
+		
+		.caja2{
+			position: relative;
+			top:-254px;
+			left:254px;
+			z-index: 2;
+		}
+		.caja3{
+			position: absolute;
+			top:0px;
+			left:508px;
+			z-index: 3;
+		}
+		.caja5{
+			position: fixed;
+			top:254px;
+			left:762px;
+			z-index: 3;	
+		}
+	</style>
+</head>
+<body>
+
+	<div class="vacio">
+	</div>
+	<div class="contenedor">
+		<div class="caja caja1">1</div>
+		<div class="caja caja2">2</div>
+		<div class="caja caja3">3</div>
+		<div class="caja caja4">4</div>
+		<div class="caja caja5">5</div>		
+	</div>
+
+
+	
+</body>
+</html>

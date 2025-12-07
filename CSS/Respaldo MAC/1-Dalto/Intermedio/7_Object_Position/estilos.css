@@ -1,0 +1,56 @@
+
+*{
+
+	font-family: 'Luxurious Roman', cursive;
+	font-weight: 100;
+	font-size: 25px;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+.caja_imagen1{
+	width: 35vw;
+	height: 20vh;
+	margin: 50px auto;
+	background-color: gray;
+}
+
+
+	.caja_imagen1 img{
+		width: 100%;
+		height: 100%;
+		border: 5px solid black;
+		object-fit: cover;
+		object-position: top;
+		cursor: pointer;
+	}
+
+
+
+
+.caja_imagen2{
+	width: 35vw;
+	height: 20vh;
+	margin: 50px auto;
+	background-color: gray;
+}
+
+
+
+	.caja_imagen2 img{
+		width: 100%;
+		height: 100%;
+		border: 5px solid black;
+		object-fit: cover;
+		object-position: bottom;
+
+	}
+
+
+
+
+

@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.barra{
+	background-color: blue;
+	width: 250px;
+	height: 100vh;
+
+}
+
+.menu1{
+	background-color: gray;
+	height: 150px;
+}
+
+.menu2{
+	background-color: darkgray;
+	height: 150px;
+	position:relative;
+	left:100%;
+}
+
+.menu3{
+	background-color: black;
+	height: 150px;
+}

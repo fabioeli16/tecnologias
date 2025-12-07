@@ -1,0 +1,63 @@
+/* 1. Corrige la altura de línea y evita el ajuste automático en móviles */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 2. Elimina el margen por defecto del body */
+body {
+  margin: 0;
+}
+
+/* 3. Corrige el tamaño de fuente y el peso del h1 */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* 4. Agrega ajustes para elementos como <hr> */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* 5. Asegura que los elementos de texto se muestren correctamente */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* 6. Elimina bordes dobles en <img> dentro de enlaces */
+img {
+  border-style: none;
+}
+
+/* 7. Normaliza botones, inputs y selects */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* 8. Evita que los botones aparezcan diferentes en iOS */
+button,
+input {
+  overflow: visible;
+}
+
+/* 9. Normaliza el estilo de <b> y <strong> */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* 10. Quita padding de listas en navegadores inconsistentes */
+ul,
+ol {
+  padding-left: 40px;
+}

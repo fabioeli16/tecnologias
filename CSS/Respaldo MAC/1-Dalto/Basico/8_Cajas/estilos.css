@@ -1,0 +1,25 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+	font-size: 30px;
+}
+
+
+h2{
+	background: blue;
+	margin-bottom: 10px;
+	display: inline;
+	width: 800px;
+
+}
+
+b{
+	background: GRAY;
+
+	display: block;
+
+}
+
+
+

@@ -1,0 +1,57 @@
+.caja{
+    width: 200px;
+    height: 200px;
+
+    box-sizing: border-box;
+    background-color: aquamarine;
+
+}
+
+.caja--padre{
+    width: 800px;
+    height: 800px;
+
+    margin: auto;
+    background-color: gray;
+    position: relative;
+
+}
+
+
+.caja--contenedor{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    background-color: tomato;
+}
+
+.caja--static{
+    border: 5px solid black;
+
+    display: flex;
+    justify-content: center;
+}
+
+.caja--relative{
+    position: relative;
+    top: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid tomato;
+    background-color: rgba(101, 223, 201,0.5);
+}
+
+.caja--absolute {
+    border: 5px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    position: absolute;
+    left: 100%;
+}

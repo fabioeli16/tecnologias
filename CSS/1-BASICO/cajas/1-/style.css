@@ -1,13 +1,9 @@
-
-
-
 .cajaContenedora{
     position: relative;
     width: 400px;
 
     margin: 20px auto; /* centra horizontal */
     border: 1px solid #ccc;      /* borde de 1px */
-
 }
 
 
@@ -15,7 +11,6 @@
 .cajaContenedora .marca {
     position: absolute;
     background-color: rgba(255, 0, 0, 0.2);
-  
 }
 
 

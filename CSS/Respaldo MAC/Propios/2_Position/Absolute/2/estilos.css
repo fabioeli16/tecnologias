@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor_principal{
+	background-color: orange;
+	border: 10px solid red;
+	width: 40vw;
+	height: 600px;
+	margin: 50px auto;
+	position: relative;
+}
+
+
+		
+		.caja.primera{
+			width: 100px;
+			height: 100px;
+			background-color: darkgrey;
+			border: 5px solid gray;
+			text-align: center;
+			box-sizing: border-box;
+			z-index: 100;								/*Posiciona primero que la caja 2*/
+
+			/*Centrado segun el view port* y no segun su contenedor*/
+			position: fixed;
+			top:0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+
+
+		.caja.segunda{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+			border: 5px solid black;
+			text-align: center;
+			box-sizing: border-box;
+
+			/*Centrado segun segun su contenedor*/
+			position: absolute;
+			top:0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+
+
+
+
+
+
+
+.texto{
+	font-size: 30px;
+}
+
+
+

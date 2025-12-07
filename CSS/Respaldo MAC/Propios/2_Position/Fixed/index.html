@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Position Fixed</title>
+	<style>
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		.fijado{
+			height: 100px;
+			width: 60%;
+			background-color: gray;
+			position: relative;
+			margin-top:10px;
+		}
+		.normal{
+			height: 120px;
+			background-color: lightblue;
+
+		}
+		.absoluto{
+			width: 50px;
+			height: 50px;
+			position:absolute;
+			left: 50%;
+			top: 0%;
+			z-index: -1;
+			background-color: blue;
+
+		}
+
+
+
+
+
+
+
+
+		.completo{
+			width: 100vw;
+			height: 100vh;
+			background-color:lightgray;
+			position: fixed;
+			z-index: -1;
+		}
+		.otro{
+			width: 500px;
+			height: 500px;
+			background-color:gray;	
+		}
+
+
+		.barra{
+			width: 200px;
+			height: 100vh;
+			background-color:blue;
+			position: fixed;
+						transition: width 1s;
+
+		}
+
+		.barra_plegada{
+
+			width: 50px;
+			height: 100vh;
+			background-color:blue;
+			position: fixed;	
+						transition: width 1s;
+	
+		}
+
+		.contenido{
+						padding: 20px;
+
+			margin-left: 200px;
+						transition: margin 1s;
+
+		}		
+		.contenido2{
+						padding: 20px;
+
+			margin-left: 50px;
+						transition: margin 1s;
+
+		}
+		.divTexto{
+
+		}
+
+	</style>
+</head>
+<body>
+	<!--
+	<div class="absoluto"></div>
+
+	<div class="fijado">
+		<div class="absoluto"></div>
+	</div>
+	<div class="fijado"></div>
+	-->
+
+	<!--SIRVE
+	<div class="completo">
+	<div class="otro">
+		Lorem ipsum dolor sit amet consectetur adipisicing, elit. Debitis saepe obcaecati quibusdam maxime, explicabo laborum et harum iste libero totam accusamus deserunt assumenda aspernatur ut enim eum eligendi expedita sapiente.
+	</div>	</div>
+-->
+
+
+	<div class="completo">
+	</div>
+
+
+
+	<div id="miBarra" class="barra" onclick="myFunction()">
+		
+	</div>
+
+	<div id="miContenido" class="contenido">
+		<div class="divTexto">
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laboriosam libero ab fugit repellat rem ut blanditiis eveniet reiciendis iure, similique ipsa nobis esse minus ea dicta nemo cumque ex.
+		</div>
+	</div>
+
+
+	
+	<script>
+		function myFunction() {
+		  var element = document.getElementById("miBarra");
+		  var element2 = document.getElementById("miContenido");
+
+  			element.classList.toggle("barra");
+  			element.classList.toggle("barra_plegada");
+
+
+  			element2.classList.toggle("contenido");
+  			element2.classList.toggle("contenido2");
+		}
+	</script>
+	
+</body>
+</html>

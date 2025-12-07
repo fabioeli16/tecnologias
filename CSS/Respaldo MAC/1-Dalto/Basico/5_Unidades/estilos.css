@@ -1,0 +1,26 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.contact-form{
+	font-size: 25px;/*DEFINIMOS EL VALOR POR DEFECTO DEL EM HIJO*/
+	background-color: gray;
+	width: 80vw;
+	height: 50vh;
+}
+
+/*UNIDADES FIJAS*/
+.contact-form__h2{
+	font-size: 50px;
+}
+
+
+
+/*UNIDADES RELATIVAS*/
+.contact-form__h2{
+	font-size: 3em;		/*3 EM = 25 * 3 PX*/
+}
+
+

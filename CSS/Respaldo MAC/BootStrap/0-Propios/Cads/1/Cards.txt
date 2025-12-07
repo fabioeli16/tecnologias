@@ -1,0 +1,116 @@
+<main class="page-content">
+    <div class="col">
+        <div class="card shadow mb-4">
+            <div class="card-body card card-inverse card-primary text-center">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="float-left col-sm-3">
+                            <img class="img-fluid"
+                                src="https://claromovilco.sharepoint.com/_vti_bin/afdcache.ashx/authitem/sites/AutomatizacionesGerenciaSoporteMonitoreo/IS/SiteAssets/IMG/logo_hitss.png?_oat_=1647876014_ec3446bcdec84f3c32bd83bbdda7cfd2398a1dbe3b242bd9da859f9083b4d1ad&P1=1647803982&P2=-362945797&P3=1&P4=HbKX%2bmEru4%2fk0r5%2bKhOaxKAKMIk7qEr0hY7cBEVsooeuOLlHbSXtwh5VklXv2LnWUY2Wo9M%2frJd4rfvrSOxqSom97dUXUYI4yC55PAjvmqEI8FaO9xBWg1BrLpLmYgm7pdlszq8JqU2SrJ73gfD7aDiXWLQB1S7XWf7UeR%2bT1197tRgfXd4vBsxXoMg6XFMD23%2bHZDnDYfv9XK1G%2frkhTgrZyoRr3cHEnki0gQcOtsMe3iWLblTcIZCxL%2bCfCdOLUWct9g6BjBmEz4DE60cVjiGBw8rG2OK%2bL7EKUQZuiX83koUQascTZWAigob4dflUeAa8JS29GLtoY7RB%2bIYKzQ%3d%3d"
+                                alt="Responsive image" >
+                        </div>
+                        <div class="col-sm-6 text-center">
+                            <h4>INTRODUCCIÓN DEL SERVICIO</h4>
+                        </div>
+                        <div class="float-right col-sm-3">
+                            <img class="img-fluid"
+                                src="https://claromovilco.sharepoint.com/_vti_bin/afdcache.ashx/authitem/sites/AutomatizacionesGerenciaSoporteMonitoreo/IS/SiteAssets/IMG/logo_claro.png?_oat_=1647842444_a03f00263dd11016cc7d9c2b6dc1051b51f206a7e0d7c9029bc116262c559564&P1=1647805068&P2=-362945797&P3=1&P4=MHYao6JcmpVyp9MDz7gaZ6%2bm54nR5oTg2op3engnL9301BP1QAS6VfiyWTMbCGxjaGlP7FUUktdqOjt8FNxr0b0vuuEezd6aMDyy69VuCzahxGGuJflh%2fWkrQ94U7tZGOGHdr6mSDz%2bjyJRxxTVHRITDtJasGlMgEoGSr2UZmhsjIhh0%2bsezoLE1br4YsMPkJRg3sqosdLgQ%2brL%2fshIa%2f%2bncExQi8%2f5DhbUAJ8v9qXawAIrS91AUZPQgqBbCICcp3KBenlRSipB1CDmQy8%2b%2fZ4tvgnMrej0EpXxvKmD4%2fitGoIE6tCM7%2f4Yal%2fF3IjIG1851XR6Ynf9WpkDsQWsudw%3d%3d"
+                                alt="Responsive image" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+ <div class="row" id="divproyectos">
+            <div class="col-lg-12 mb-4">
+                <!-- Project Card Example -->
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Estado de Entrega</h6>
+                    </div>
+                    <div class="card-body">
+                        <table id="tableproy" class="table table-bordered table-striped" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Servicio</th>
+                                    <th>Estado</th>
+                                    <th>Avance</th>
+                                    <th id="ComprobacionGestor">Gestor</th>
+                                    <th>Teléfono</th>
+                                    <th>Gerencia que entrega</th>
+                                    <th>Gerencia que Recibe</th>
+                                    <th>Nota</th>
+                                    <th>Op</th>
+                                    <th>Dirección que entrega</th>
+                                    <th>Dirección que Recibe</th>
+                                    <th>Coordinador que entrega</th>
+                                    <th>Coordinador que Recibe</th>
+                                    <th>Fecha PAP</th>
+                                    <th>Alcance</th>
+                                    <th>Gerente</th>
+                                    <th>Tipo de Entrega</th>
+                                    <th>Clasificación TFS</th>
+                                    <th>No línea de producto TFS</th>
+                                    <th>Línea de Producto</th>
+                                    <th>Fecha de Acercamiento</th>
+                                    <th>Proveedor de Servicio</th>
+                                    <th>PRY Estratégico</th>
+                                    <th>Estado del Servicio</th>
+                                    <th>Fecha Envío Acta</th>
+                                    <th>Fecha Cierre Entrega</th>
+                                    <th>Numero I.S</th>
+                                    <th>Estado de introducción al servicio</th>
+                                    <th>¿Se genero riesgo?</th>
+                                    <th>Fecha envió acta de riesgos</th>
+                                    <th>Fecha de cierre de riesgos</th>
+                                    <th>Numero cambio I.S</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>

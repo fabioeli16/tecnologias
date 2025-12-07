@@ -1,0 +1,27 @@
+.primera_caja{
+	background-color: blue;
+	width: 60vw;
+	height: 50px;
+}
+
+.segunda_caja{
+	background-color: red;
+	margin-top: 50px;
+	height: 200px;
+}
+
+.tercera_caja{
+	background-color: gray;
+	display: inline;
+	width: 600px;
+	height: 600px;
+
+}
+
+
+.cuarta_caja{
+	background-color: darkgray;
+	display: inline-block;
+	width: 600px;
+	height: 600px;
+}

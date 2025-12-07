@@ -1,0 +1,49 @@
+
+*{
+
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+h1{
+	font-size: 35px;
+}
+
+.caja1{
+	background-color: #ddd;
+}
+
+.caja2{
+	background-color: #bbb;
+}
+
+
+
+
+
+
+
+div{
+	width: 49%;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px){
+	div{
+		width: 100%;
+		display: block;
+	}
+	h1{
+			font-size: 25px;
+
+	}
+}

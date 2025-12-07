@@ -1,0 +1,34 @@
+
+div{
+	width: 120px;
+	height: 120px;
+	display: block;
+	text-align: center;
+	font-family: 'The Nautigal', cursive;
+	font-size: 30px;
+}
+
+.caja1{
+	background-color: orange;
+
+}
+
+.caja2{
+	background-color: green;
+	position: absolute;
+	left: 20px;
+	top: 60px;
+	z-index: 2;
+}
+
+.caja3{
+	background-color: lightblue;
+	position: relative;
+	z-index: 1;
+
+}
+
+.caja4{
+	background-color: yellow;
+
+}

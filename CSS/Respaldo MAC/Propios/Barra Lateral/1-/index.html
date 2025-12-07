@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Barra lateral super loca</title>
+</head>
+<body>
+	
+
+	<div class="todo">
+
+		<div class="barra">
+			<div class="cabecera">
+				<img src="logo.png" alt="" width="50px">
+			</div>
+
+			<div class="menu">
+
+				<ul>
+
+					<div class="opcion1 abierto">
+						<li>Opcion 1 </li>
+
+						<div class="submenu">
+								<ul>Esto</ul>
+								<ul>Lo otro</ul>
+								<ul>y aquello</ul>
+						</div>
+
+						<div class="submenu2">
+								<ul>Esto</ul>
+								<ul>Lo otro</ul>
+								<ul>y aquello</ul>
+						</div>
+
+					</div>
+	
+
+					<li>
+						Opcion 2
+
+					</li>
+
+
+
+				</ul>
+
+			</div>
+		</div>
+
+
+
+		<div class="cerrar">
+			X
+		</div>
+
+
+
+
+		<div class="contenido">
+			Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iste, ratione a, perspiciatis reprehenderit sed nihil quisquam, consequatur et iusto assumenda aperiam deserunt cum molestiae consequuntur, necessitatibus illum optio quasi!
+		</div>		
+
+	</div>
+
+
+
+
+	<script>
+		let barra=document.querySelector(".barra");
+		let opcion1=document.querySelector(".opcion1");
+		let cerrar=document.querySelector(".cerrar");
+		cerrar.addEventListener("click",()=>{
+
+			if(!barra.classList.contains("cerrado")){
+				barra.classList.add('cerrado');
+				opcion1.classList.add('cerrado');
+				opcion1.classList.remove('abierto');
+				cerrar.innerHTML="O";			
+			}else{
+				barra.classList.remove('cerrado');
+				opcion1.classList.add('abierto');
+				opcion1.classList.remove('cerrado');
+				cerrar.innerHTML="X";			
+			}
+
+		});
+	</script>
+</body>
+</html>

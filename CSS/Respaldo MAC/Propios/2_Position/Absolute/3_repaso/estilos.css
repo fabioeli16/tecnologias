@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.contenedor_principal{
+	background-color: orange;
+	border: 10px solid red;
+	width: 40vw;
+	height: 600px;
+	margin: 50px auto;
+
+}
+
+.caja{
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+
+/*POSICION SEGUN LA VENTANA YA QUE SU CONTENEDOR  NO ES DE TIPO POSITION RELATIVE*/
+.caja.primera{
+	background-color: darkgrey;
+	border: 5px solid gray;
+
+	position: absolute;
+	left: 10%;
+}
+
+
+.caja.segunda{
+	background-color: purple;
+	top: 100%;
+	border: none;
+}
+
+
+
+
