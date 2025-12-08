@@ -127,7 +127,7 @@ PENDIENTE
 
 
 -APRENDER SVG
-
+-stacking context
 
 
 
