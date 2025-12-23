@@ -1,0 +1,356 @@
+
+
+REACT
+***********************************************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************************************
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++CONSULTAS
+
+despues de ejecutar: npm run build como los usuarios pueden acceder a la app o quien la sirve?
+Dame otro codigo para un login pero sin usar vite ni jsx
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++CONCEPTOS
+
+
+
+------------------------------------------------------------
+VITE
+Vite es una herramienta moderna de desarrollo frontend que se usa mucho con React (aunque también funciona con Vue, Svelte, Vanilla JS, etc.).
+LA ESTRUCTURA ES DIFERENTE
+-Monitor no usa VITE
+
+------------------------------------------------------------
+HOOK
+
+
+------------------------------------------------------------
+ESTADOS DE UN COMPONENTE
+
+
+
+-----------------------------------------------------------------------------------
+-Desestructuración de objetos
+*El nombre de la variable ES lo importante, el orden NO importa
+
+-Desestructuración de arrays
+*El orden ES lo importante, el nombre NO importa
+
+
+-----------------------------------------------------------------------------------
+-CHILDREN
+Consiste en pasar componentes dentro de otro componente
+-el componente padre recibe un argumento "children" que inserta en su codigo HTML/JS
+
+
+
+-----------------------------------------------------------------------------------
+-TIPOS DE PROYECTO REACT
+
+1-React “a mano” con CDN (sin build tools)..................................
+
+
+2-React con npm + Babel + Webpack (configuración manual)...................
+
+
+3-Create React App (CRA) (casi en desuso)..................................
+
+Características
+	*Antes era el estándar
+	*Todo configurado automáticamente
+	*Webpack oculto
+
+Problemas
+	*Lento
+	*Pesado
+	*Ya no es recomendado oficialmente
+#COMANDOS:
+npx create-react-app my-app
+cd my-app
+npm start
+
+
+4-Vite + React (RECOMENDADO)...............................................
+
+Características
+	Arranque ultra rápido
+	Hot Reload instantáneo
+	Configuración mínima
+
+#COMANDOS:
+npm create vite@latest my-app
+cd my-app
+npm install
+npm run dev
+
+5-Next.js (React con backend incluido).....................................
+Características
+	SSR (renderizado del lado servidor)
+	Routing automático
+	Backend integrado (API routes)
+	Excelente SEO
+
+#COMANDOS:
+npx create-next-app@latest
+
+
+
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DUDAS
+-PARA LOS PROYECTOS DE REACT SE DEBE EMPAQUETER TODO PARA EL PASO A PRODUCCIO (BUILD) PERO EN LA MAQUINA DE QA SE SIGO USANDO NPM START, ¿COMO SE TRABAJA EN PRODUCCION?
+
+-Se pueden tener varias paginas en un proyecto de react	
+
+
+-QUE ES BABEL - JSX - VITE - Webpack- bundlers - TODOS LOS TIPOS DIFERENTES DE PROYECTOS EN REACT
+
+-diferentes formar de iniciar un proyecto con react y npm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DEMO-1-crear-con-npm-vite
+cd /home/automatizacion/Desktop/Programacion/node/react/crear-proyectos/1-crear-con-npm-vite/
+
+
+#COMANDOS:
+npm create vite@latest 1-crear-con-npm-vite
+cd my-app
+npm install
+npm run dev
+
+#CONFIG
+✔ Project name: » mi-app-react
+✔ Select a framework: » React
+✔ Select a variant: » JavaScript
+
+#INSTALAR DEPENDENCIAS
+npm install
+
+
+---------------------------------------------
+OP2
+
+npm create vite@latest mi-app-react -- --template react
+cd mi-app-react
+npm install
+npm run dev
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DEMO-CHILDREN
+
+
+#CREAR PROYECTO
+cd /home/automatizacion/Desktop/Programacion/node/react
+npx create-react-app 1-
+cd /home/automatizacion/Desktop/Programacion/node/react/children/1-
+
+
+#CREAR ESTRUCTURA
+cd src
+mkdir components
+cd components
+touch Login.js
+
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DEMO-LOGIN CON REACT
+#CREAR PROYECTO
+cd /home/automatizacion/Desktop/Programacion/node/react
+npx create-react-app 2-login-react
+cd 2-login-react
+
+
+#CREAR ESTRUCTURA
+cd src
+mkdir components
+cd components
+touch Login.js
+
+
+
+#INICIAR
+npm start
+http://192.168.10.158:3000
+
+
+
+#ESTRUCTURA
+2-login-react/
+│
+├─ node_modules/
+├─ public/
+│   └─ index.html
+│
+├─ src/
+│   ├─ components/
+│   │   └─ Login.js
+│   │
+│   ├─ App.js
+│   ├─ index.js
+│   └─ index.css
+│
+├─ package.json
+└─ README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DEMO-ROTER
+
+#CREAR PROYECTO
+cd /home/automatizacion/Desktop/Programacion/node/react
+npx create-react-app 3-mi-app-router
+cd 3-mi-app-router
+
+#INSTALAR DEPENDENCIAS
+npm install react-router-dom
+
+#CREAR ESTRUCTURA
+cd src
+mkdir components
+cd components
+
+
+#INICIAR
+cd /home/automatizacion/Desktop/Programacion/node/react/3-mi-app-router
+npm start
+http://192.168.10.158:3000
+
+
+
+-------------------------------------------------------------------------
+-ESTRUCTURA
+src/
+│── components/
+│   ├── Home.js
+│   ├── Login.js
+│   ├── Dashboard.js
+│── App.js
+│── index.js
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DESESTRUCTURACION
+
+
+
+
+
+const usuario = {
+  nombre: "Eli",
+  edad: 30,
+  pais: "Colombia"
+};
+
+const { nombre, edad } = usuario;
+
+
+
+
+
+const numeros = [10, 20, 30];
+
+const [a, b] = numeros;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
