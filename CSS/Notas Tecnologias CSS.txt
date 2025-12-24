@@ -100,6 +100,46 @@ Utility-first (como Tailwind CSS)
 
 
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DISPLAY - GRID
+
+-TUTORIAL
+https://www.youtube.com/watch?v=EiNiSFIPIQE
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+GAP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -141,6 +181,65 @@ PENDIENTE
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+COMPONENTES
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1-LANDING PAGE
+
+-REFERENCIAS Y RECURSOS
+https://www.youtube.com/watch?v=rscFdPzVJhw&t=150s
+https://remixicon.com/
+
+-El efecto de aparicion se logro usando JS
+-Los estilos se definen primero para el modo movil y usando media QUERY se crean los estilos para cuando estan en pantalla completa
+-se uso display grilla en vez de FLEX para posicionar el contenido del header en columnas y despues en filas
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2-LANDING PAGE
+
+
+-REFERENCIAS Y RECURSOS
+https://www.youtube.com/watch?v=99VV8wnO2Kc&list=PLz_5rPRIvGEBDvyf-HIIDHjsPppnuXtFG&index=3
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+3-LANDING PAGE
+
+https://www.youtube.com/watch?v=gBTvJ2oSC4U&list=PLnICNFdxWbz6fo0vPGQl6bTNVmJbkZgM1&index=4
 
 
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;   /* sidebar + contenido */
+  grid-template-rows: auto 1fr auto;  /* header, contenido, footer */
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  min-height: 100vh; /* ocupa toda la pantalla */
+  gap: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Áreas */
+.header {
+  grid-area: header;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #555;
+  color: #fff;
+  padding: 15px;
+}
+
+.content {
+  grid-area: content;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Estilos extra */
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+/* Responsive: móviles */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+  }
+}
+    </style>
+
+
+</head>
+<body>
+
+
+    <div class="layout">
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+
+    <aside class="sidebar">
+        <ul>
+        <li>Menú 1</li>
+        <li>Menú 2</li>
+        <li>Menú 3</li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <h2>Contenido principal</h2>
+        <p>
+        Aquí va el contenido de la página.
+        </p>
+    </main>
+
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+    </div>
+</body>
+</html>
