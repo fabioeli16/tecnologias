@@ -6,6 +6,30 @@ BASICO
 **********************************************************************************************************************************************
 
 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++CONCEPTOS COMPLEJOS
+
+-Selectores, reglas aplicadas y jerarquia
+
+-DISPLAY Y LAS CAJAS:
+DISPLAY: PROPIEDAD
+CAJAS: ES EL CONCEPTO QUE DESCRIBE COMO SE MUESTRAN TODOS LOS ELEMENTOS
+
+-POSITION Y EL FLUJO
+*POSITION: PROPIEDAD
+*FLUJO: ES EL CONCEPTO QUE DESCRIBE COMO SE COMPORTA LA PROPIEDAD, 
+
+
+Z-INDEX Y STACK
+Z-INDEX: PROPIEDAD
+STACK: CONCEPTO
+
+
+
+
+
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +GERARQUIA Y ESPECIFICIDAD
 
@@ -115,12 +139,32 @@ GAP
 
 
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++OVERFLOW -HIDDEN
+
+
+-Me puede servir para ocultar elementos y luego mostrarlos simplemento agrandando su caja contenedora
 
 
 
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++PSEUDO
 
+-Las pseudo-clases describen estados, los pseudo-elementos describen partes de un elemento/etiqueta/nodo.
 
+-PSEUDO ELEMENTO:
+*Un pseudo-elemento tambien pueden ser una parte virtual de un elemento HTML creada con CSS.
+*llevan dos puntos dobles
+*EJEMPLO:
+	::before
+	:first-line
+
+-PSEUDO CLASE:
+*llevan solo dos puntos
+*EJEMPLO:
+	:active
+	:hover
 
 
 

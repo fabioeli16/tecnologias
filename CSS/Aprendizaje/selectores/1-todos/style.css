@@ -1,0 +1,316 @@
+/* =========================================================
+   SELECTORES BÁSICOS
+   ========================================================= */
+
+/* Selector universal */
+* {
+  box-sizing: border-box;
+}
+
+/* Selector de tipo (etiqueta) */
+div {
+  padding: 10px;
+}
+
+/* Selector de clase */
+.card {
+  border: 1px solid #000;
+}
+
+/* Selector de múltiples clases */
+.card.active {
+  background-color: green;
+}
+
+/* Selector de ID */
+#header {
+  height: 60px;
+}
+
+
+/* =========================================================
+   SELECTORES DE ATRIBUTOS
+   ========================================================= */
+
+/* Atributo existente */
+input[disabled] {
+  opacity: 0.5;
+}
+
+/* Atributo con valor exacto */
+input[type="text"] {
+  color: blue;
+}
+
+/* Atributo que contiene */
+a[href*="google"] {
+  color: red;
+}
+
+/* Atributo que empieza con */
+a[href^="https"] {
+  font-weight: bold;
+}
+
+/* Atributo que termina con */
+a[href$=".pdf"] {
+  text-decoration: underline;
+}
+
+/* Atributo lista separada por espacios */
+div[class~="box"] {
+  border-radius: 5px;
+}
+
+/* Atributo con prefijo y guion */
+div[lang|="es"] {
+  background-color: yellow;
+}
+
+
+/* =========================================================
+   SELECTORES COMBINADORES (RELACIONES)
+   ========================================================= */
+
+/* Descendiente */
+div p {
+  color: purple;
+}
+
+/* Hijo directo */
+div > p {
+  font-size: 14px;
+}
+
+/* Hermano adyacente */
+h1 + p {
+  margin-top: 0;
+}
+
+/* Hermanos generales */
+h1 ~ p {
+  color: gray;
+}
+
+
+/* =========================================================
+   AGRUPACIÓN DE SELECTORES
+   ========================================================= */
+
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   PSEUDOCLASES DE ESTADO
+   ========================================================= */
+
+/* Hover */
+a:hover {
+  color: orange;
+}
+
+/* Activo */
+a:active {
+  color: red;
+}
+
+/* Focus */
+input:focus {
+  outline: 2px solid blue;
+}
+
+/* Visitado */
+a:visited {
+  color: purple;
+}
+
+
+/* =========================================================
+   PSEUDOCLASES DE FORMULARIOS
+   ========================================================= */
+
+input:checked {
+  accent-color: green;
+}
+
+input:disabled {
+  background-color: #eee;
+}
+
+input:enabled {
+  background-color: white;
+}
+
+input:required {
+  border-color: red;
+}
+
+input:invalid {
+  border-color: crimson;
+}
+
+
+/* =========================================================
+   PSEUDOCLASES ESTRUCTURALES
+   ========================================================= */
+
+/* Primer hijo */
+li:first-child {
+  font-weight: bold;
+}
+
+/* Último hijo */
+li:last-child {
+  color: blue;
+}
+
+/* N-ésimo hijo */
+li:nth-child(2) {
+  color: green;
+}
+
+/* N-ésimo impar */
+li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+/* Desde el final */
+li:nth-last-child(2) {
+  color: red;
+}
+
+/* Primer elemento de su tipo */
+p:first-of-type {
+  font-style: italic;
+}
+
+/* Último elemento de su tipo */
+p:last-of-type {
+  text-decoration: underline;
+}
+
+/* N-ésimo de su tipo */
+p:nth-of-type(3) {
+  color: brown;
+}
+
+
+/* =========================================================
+   OTRAS PSEUDOCLASES
+   ========================================================= */
+
+/* Elemento vacío */
+:empty {
+  display: none;
+}
+
+/* Raíz del documento */
+:root {
+  --main-color: blue;
+}
+
+/* Elemento target (ancla) */
+:target {
+  border: 2px solid red;
+}
+
+
+/* =========================================================
+   PSEUDOELEMENTOS
+   ========================================================= */
+
+/* Antes del contenido */
+p::before {
+  content: "👉 ";
+}
+
+/* Después del contenido */
+p::after {
+  content: " ✔";
+}
+
+/* Primera letra */
+p::first-letter {
+  font-size: 2em;
+}
+
+/* Primera línea */
+p::first-line {
+  font-weight: bold;
+}
+
+/* Selección de texto */
+::selection {
+  background: yellow;
+}
+
+/* Placeholder */
+input::placeholder {
+  color: gray;
+}
+
+/* Marcadores de listas */
+li::marker {
+  color: red;
+}
+
+
+/* =========================================================
+   SELECTORES LÓGICOS (CSS LEVEL 4)
+   ========================================================= */
+
+/* Negación */
+button:not(.primary) {
+  background-color: gray;
+}
+
+/* Coincidencia múltiple */
+:is(h1, h2, h3) {
+  color: darkblue;
+}
+
+/* Coincidencia sin especificidad */
+:where(nav a) {
+  text-decoration: none;
+}
+
+/* Selector padre (moderno) */
+div:has(img) {
+  border: 2px solid green;
+}
+
+
+/* =========================================================
+   SELECTORES DE INTERACCIÓN AVANZADA
+   ========================================================= */
+
+/* Contiene foco */
+form:focus-within {
+  border: 2px solid blue;
+}
+
+
+/* =========================================================
+   SELECTORES DE IDIOMA Y DIRECCIÓN
+   ========================================================= */
+
+/* Idioma */
+:lang(es) {
+  font-style: italic;
+}
+
+/* Dirección del texto */
+:dir(rtl) {
+  text-align: right;
+}
+
+
+/* =========================================================
+   SELECTOR COMPLEJO (EJEMPLO REAL)
+   ========================================================= */
+
+section > article.card:hover > p:not(.hidden):first-of-type {
+  color: hotpink;
+}
