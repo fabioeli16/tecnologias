@@ -50,10 +50,16 @@ npx (Node Package Execute) se usa para ejecutar paquetes sin instalarlos permane
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 HOOK
-
+-CONJUNTO DE FUNCIONES DENTRO DE LA API REACT
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ESTADOS DE UN COMPONENTE
+
+En React, los estados de un componente (state) son datos internos que pertenecen al componente y que pueden cambiar con el tiempo.
+
+Cuando el estado cambia, React vuelve a renderizar el componente para reflejar esos cambios en la interfaz.
+
+
 
 
 
@@ -69,6 +75,15 @@ ESTADOS DE UN COMPONENTE
 -CHILDREN
 Consiste en pasar componentes dentro de otro componente
 -el componente padre recibe un argumento "children" que inserta en su codigo HTML/JS
+
+
+
+
+
+
+
+
+
 
 
 
