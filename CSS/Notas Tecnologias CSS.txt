@@ -153,6 +153,7 @@ GAP
 
 -Las pseudo-clases describen estados, los pseudo-elementos describen partes de un elemento/etiqueta/nodo.
 
+--------------------------------------
 -PSEUDO ELEMENTO:
 *Un pseudo-elemento tambien pueden ser una parte virtual de un elemento HTML creada con CSS.
 *llevan dos puntos dobles
@@ -160,6 +161,7 @@ GAP
 	::before
 	:first-line
 
+-------------------------------------
 -PSEUDO CLASE:
 *llevan solo dos puntos
 *EJEMPLO:
@@ -169,33 +171,45 @@ GAP
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**********************************************************************************************************************************************
-**********************************************************************************************************************************************
-**********************************************************************************************************************************************
-
-
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +ISOLATION
 -Sirve para crea un nuevo STACK CONTEXT 
--Cuanod se tienen muchos valores de Z-INDEX sirve para crear un nuevo orden de Z-INDEX para el elemento al que se aplica (validar eso)
+-Cuando se tienen muchos valores de Z-INDEX sirve para crear un nuevo orden de Z-INDEX para el elemento al que se aplica (validar eso)
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CAJAS
+
+
+--------------------------------------
+MARGIN COLLAPSING
+*ES EL EFECTO POR EL CUAL EL MARGIN DE UN ELEMENTO HIJO, EMPUJA EL ELEMENTO PADRE 
+*SUCEDE CUANDO EL ELEMENTO HIJO ES EL PRIMER O ULTIMO ELEMENTO
+*SE RESUELVE
+
+
+
+
+
+
+
+RECURSOS
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
 
 
 

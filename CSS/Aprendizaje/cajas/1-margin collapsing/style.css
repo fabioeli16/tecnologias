@@ -1,0 +1,38 @@
+
+
+
+.padre {
+  background: aquamarine;
+  height: 300px;
+}
+
+.hijo {
+  margin-top: 50px;
+  background: lightcoral;
+}
+
+
+
+
+.padre--no-collapsing{
+  background: aqua;
+  height: 300px;
+
+  /*1-EVITAR COLLAPSING USANDO PADDING*/
+  /*padding-top: 1px;*/
+
+  /*2-EVITAR COLLAPSING USANDO BORDER*/
+  /*DEBE SER ALMENOS UN 1PX (NO ME GUSTA)*/
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+   /*3-EVITAR COLLAPSING USANDO FLEX*/
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hijo--no-collapsing{
+  margin-top: 50px;
+  background: tomato;
+}
