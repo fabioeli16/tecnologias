@@ -1,6 +1,9 @@
 
 
-BASICO
+
+
+
+RESUMEN 
 **********************************************************************************************************************************************
 **********************************************************************************************************************************************
 **********************************************************************************************************************************************
@@ -21,12 +24,23 @@ CAJAS: ES EL CONCEPTO QUE DESCRIBE COMO SE MUESTRAN TODOS LOS ELEMENTOS
 *FLUJO: ES EL CONCEPTO QUE DESCRIBE COMO SE COMPORTA LA PROPIEDAD, 
 
 
-Z-INDEX Y STACK
-Z-INDEX: PROPIEDAD
-STACK: CONCEPTO
+-Z-INDEX Y STACK
+*Z-INDEX: PROPIEDAD
+*STACK: CONCEPTO
 
 
 
+
+
+
+
+
+
+
+BASICO
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
 
 
 
@@ -193,6 +207,92 @@ MARGIN COLLAPSING
 
 
 
+
+
+BASICO
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
+**********************************************************************************************************************************************
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+TRANSITION
+
+-----------------------------------------
+transition-property
+
+| Valor       | Descripción                                 |
+| ----------- | ------------------------------------------- |
+| `none`      | No hay transición                           |
+| `all`       | Transiciona todas las propiedades animables |
+| `propiedad` | Ej: `width`, `opacity`, `transform`         |
+| lista       | Ej: `width, height, opacity`                |
+
+Propiedades comunes animables
+
+width, height
+margin, padding
+top, left, right, bottom
+background-color
+color
+opacity
+transform
+box-shadow
+border-radius
+filter
+
+No animables (ejemplos):
+display
+position
+float
+z-index
+
+-----------------------------------------
+transition-duration
+
+
+| Valor    | Descripción           |
+| -------- | --------------------- |
+| `0s`     | Sin animación         |
+| `<time>` | `0.2s`, `500ms`, `1s` |
+
+
+-----------------------------------------
+transition-timing-function
+
+| Valor         | Efecto                           |
+| ------------- | -------------------------------- |
+| `ease`        | Lento → rápido → lento (default) |
+| `linear`      | Velocidad constante              |
+| `ease-in`     | Empieza lento                    |
+| `ease-out`    | Termina lento                    |
+| `ease-in-out` | Lento → rápido → lento           |
+| `step-start`  | Salto inmediato                  |
+| `step-end`    | Salto al final                   |
+
+
+
+-----------------------------------------
+transition-delay
+
+| Valor    | Descripción   |
+| -------- | ------------- |
+| `0s`     | Sin retraso   |
+| `<time>` | `200ms`, `1s` |
+
+
+
+
+-----------------------------------------
+Propiedad shorthand transition
+
+
+transition: property duration timing-function delay;
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 
