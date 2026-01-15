@@ -11,7 +11,11 @@ NOTAS PYTHON
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +INDICE
 
--
+-CONCEPTOS
+	*LIBRERIAS-PAQUETES-MODULOS
+
+-PROGRAMAS
+	*Estructura basica
 
 
 
@@ -19,7 +23,7 @@ NOTAS PYTHON
 
 
 
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +CONCEPTOS
 
 
@@ -103,6 +107,87 @@ PROGRAMAS PYTHON
 *********************************************************************************************************************************************************************
 *********************************************************************************************************************************************************************
 *********************************************************************************************************************************************************************
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1-estructura-basica-1-proyecto
+
+--------------------------------------------------------
+NOTAS
+*Se creo tada la estructura y paquetes manualmente
+*se crearon todos los modulos/script manualmente incluyendo los __init__.py
+*CARPETA "__pycache__" se genera automaticamente cuando se 
+
+
+--------------------------------------------------------
+-OBJETIVOS
+*ESTRUCTURA BASICA
+*CARGAR A GIT SOLO LO NECESARIO
+*ARCHIVO DE EJECUCION DEL PROYECTO
+*DEFINIR VARIABLES EN .ENV Y CONSULTARLAS CON LOS SCRIOPTS .PY
+
+
+
+-------------------------------------------------------
+-COMANDO CREAR ENTORNO VIRTUAL WINDOWS
+
+#SE INGRESA A LA RUTA (ESTA RELATIVO AL REPOSITORIO NADA MAS)
+cd tecnologias\PYTHON\1-estructura-basica\1-proyecto
+#CREAR
+python -m venv venvwindows
+
+#ACTIVAR con PS
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\venvwindows\Scripts\Activate.ps1
+
+#ACTIVAR CON CMD
+venvwindows\Scripts\activate
+
+
+#DESACTIVAR
+deactivate
+
+-------------------------------------------------------
+-INSTALAR LIBRERIAS
+
+pip install requests==2.32.5
+pip install python-dotenv
+
+
+-------------------------------------------------------
+COMANDO PARA GENERAR EL ARCHIVO DE REQUERIMIENTOS
+
+pip freeze > requirements.txt
+
+
+-------------------------------------------------------
+-COMANDO DE EJECUCION
+
+#EN WINDOWS
+#SE INGRESA A LA RUTA (ESTA RELATIVO AL REPOSITORIO NADA MAS)
+cd tecnologias\PYTHON\1-estructura-basica\1-proyecto
+python -m app.main
+
+
+
+
+--------------------------------------------------
+EJECUTAR ARCHIVO DE ARRANQUE EN WINDOWS
+
+.\arrancarenwindows.ps1
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+
+
+
+
+
+
+
 
 
 
