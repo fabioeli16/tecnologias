@@ -46,18 +46,38 @@ EJECUTAR WINDOWS
 tecnologias\PYTHON\1-estructura-basica\1-proyecto\.env
 
 # SE INGRESA A LA RUTA (SE DEBE CAMBIAR DEPENDIENDO DE LA MAQUINA DONDE SE EJECUTA) 
-cd tecnologias\PYTHON\1-estructura-basica\1-proyecto
-cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\1-estructura-basica\1-proyecto
+cd tecnologias\PYTHON\fastapi\api-simple
+cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\fastapi\api-simple
 
 #SE EJECUTA LA SHELL
 .\arrancarenwindows.ps1
 
 
 
+**********************************************************************************************************************************************************************
+ENDPOINTS
+http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/saludo/Eli
+http://127.0.0.1:8000/suma?a=5&b=3
 
 
 ---------------------------------------------------------------
 
 
+
+**********************************************************************************************************************************************************************
+PENDIENTES
+
+COMO SE EJECUTA API FAST. 
+ *TIENE TAREAS BLOQUEANTES
+
+estructurar la API por routers
+
+conectar base de datos
+
+agregar auth / JWT
+
+o dockerizar tu FastAPI 🚀
 
 

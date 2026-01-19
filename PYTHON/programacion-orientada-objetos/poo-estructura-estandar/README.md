@@ -15,15 +15,15 @@ proyecto/
 │   │
 │   ├── services/           # Lógica de negocio
 │   │   ├── __init__.py
-│   │   └── servicio.py
+│   │   └── banco_service.py
 │   │
 │   ├── utils/              # Funciones auxiliares
 │   │   ├── __init__.py
-│   │   └── helpers.py
+│   │   └── validaicones.py
 │   │
 │   └── models/             # Modelos (clases, entidades, esquemas)
 │       ├── __init__.py
-│       └── modelo.py
+│       └── cuenta_bancaria.py
 │
 │
 ├── venvwindows/                     # Entorno virtual (NO se versiona)
@@ -47,7 +47,7 @@ tecnologias\PYTHON\1-estructura-basica\1-proyecto\.env
 
 # SE INGRESA A LA RUTA (SE DEBE CAMBIAR DEPENDIENDO DE LA MAQUINA DONDE SE EJECUTA) 
 cd tecnologias\PYTHON\1-estructura-basica\1-proyecto
-cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\1-estructura-basica\1-proyecto
+cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\programacion-orientada-objetos\poo-estructura-estandar
 
 #SE EJECUTA LA SHELL
 .\arrancarenwindows.ps1

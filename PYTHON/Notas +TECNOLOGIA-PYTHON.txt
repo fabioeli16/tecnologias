@@ -13,6 +13,8 @@ NOTAS PYTHON
 
 -CONCEPTOS
 	*LIBRERIAS-PAQUETES-MODULOS
+	
+	*POO
 
 -PROGRAMAS
 	*Estructura basica
@@ -29,6 +31,9 @@ NOTAS PYTHON
 
 --------------------------------------------------------------------------------------------
 -PAQUETES
+*La referencia a los paquetes depende fuertemente de la forma en la que se ejecuta el script de inicio de ejecucion
+	si se tiene un proyecto app/main.py y se ejecuta de esta forma app.main entonces todos los paquetes que se importen deben hacer referencia a app.main
+
 *Los paquetes son una forma de organizar módulos (archivos .py) en carpetas, para que tu proyecto sea más ordenado, reutilizable y fácil de mantener.
 
 *Los paquetes normalmente tienen un archivo especial llamado
@@ -74,13 +79,44 @@ python nombredelmainapp.y
 5-desactivar
 deactivate
 
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+-PROGRAMACION ORIENTADA OBJETOS
+
+
+*Python usa convenciones de nombres para indicar el nivel de acceso:
+        self.nombre = nombre  # Atributo público
+        self._edad = 25  # Convención: "no accedas desde fuera"
+        self.__cuenta_bancaria = "123456"  # Name mangling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +PENDIENTES
 
+-decoradores 
+@
+@property
 
 
 
-
+-list comprehension
 
 
 

@@ -1,5 +1,5 @@
 
-**********************************************************************************************************************************************************************
+-----------------------------------------------------------------------------------------------
 1-ESTRUCTURA
 
 proyecto/
@@ -36,18 +36,13 @@ proyecto/
 
 
 
-
-**********************************************************************************************************************************************************************
-2-EJECUCION
-
----------------------------------------------------------------
-EJECUTAR WINDOWS
+-----------------------------------------------------------------------------------------------
+2-EJECUTAR
 #SE CREA EL ARCHIVO .env con las mismas variables definidas en (.env.example) y asignandoles valor
 tecnologias\PYTHON\1-estructura-basica\1-proyecto\.env
 
 # SE INGRESA A LA RUTA (SE DEBE CAMBIAR DEPENDIENDO DE LA MAQUINA DONDE SE EJECUTA) 
 cd tecnologias\PYTHON\1-estructura-basica\1-proyecto
-cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\1-estructura-basica\1-proyecto
 
 #SE EJECUTA LA SHELL
 .\arrancarenwindows.ps1
@@ -56,7 +51,6 @@ cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\1-estructura-basica\1-pr
 
 
 
----------------------------------------------------------------
 
 
 

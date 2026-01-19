@@ -46,8 +46,8 @@ EJECUTAR WINDOWS
 tecnologias\PYTHON\1-estructura-basica\1-proyecto\.env
 
 # SE INGRESA A LA RUTA (SE DEBE CAMBIAR DEPENDIENDO DE LA MAQUINA DONDE SE EJECUTA) 
-cd tecnologias\PYTHON\1-estructura-basica\1-proyecto
-cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\1-estructura-basica\1-proyecto
+cd tecnologias\PYTHON\acceso-base-de-datos\1-mysql
+C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\acceso-base-de-datos\1-mysql
 
 #SE EJECUTA LA SHELL
 .\arrancarenwindows.ps1
