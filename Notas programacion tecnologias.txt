@@ -28,6 +28,8 @@
 @
 @property
 
+-ARCHIVO README.md
+*como configurar un archivo md con formato y estilo compatible con GITHUB
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
