@@ -1,0 +1,88 @@
+
+
+#***************************************************************************************************************************************************
+#***************************************************************************************************************************************************
+#***************************************************************************************************************************************************
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++CONCEPTOS
+
+-DOCKERFILE: DISEÑADOR
+	.Un Dockerfile es un archivo de texto con instrucciones para crear una imagen Docker
+
+
+-IMAGEN: PLANTILLA
+	.es una plantilla inmutable que contiene todo lo necesario para ejecutar una aplicación.
+
+-CONTENEDOR: EJECUCION
+	Instancia corriendo de la imagen
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++FLUJO
+
+--------------------------------------------------------------------
+-Se crea docker file	->	SE CONSTRUYE LA IMAGEN APARTIR DE UN DOCKERFILE	->	SE EJECUTA LA IMAGENE			-> SE GESTIONA CONTENDOR
+-touch Dockerfile	-> 	dokcer buid .					->	docker run -p 8080:8080 nombre-imagen	-> docker ps -a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++COMANDOS
+
+
+-----------------------------------------------------------------
+-BUILD
+
+#COMANDO
+docker build \
+  -t mi-backend:2.0 \
+  -f Dockerfile.prod \
+  --build-arg ENV=prod \
+  --no-cache \
+  .
+
+
+
+#ESTE CARACTER SIRVE PARA SEPARAR UN SOLO COMANDO EN VARIAS LINEAS "\"
+#"-t" dar nombre y etiqueta/tag a la imagen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

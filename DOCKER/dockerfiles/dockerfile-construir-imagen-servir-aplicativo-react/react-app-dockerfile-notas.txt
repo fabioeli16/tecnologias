@@ -1,0 +1,16 @@
+
++NOTAS
+-En Este dockerfile se crea la imagen con: multi-stage
+-Esta imagen trae Node + npm.
+	Se usa solo para construir tu app (npm run build → dist/).
+	Todo lo que instales o generes aquí NO se copia automáticamente a la imagen final.
+
+-la imagen final es básicamente nginx + tus archivos build, mucho más liviana que si usaras solo Node.
+
+
+
+
++CONCLUSION
+Usar multi-stage build es la forma ideal de mantener la imagen liviana.
+No importa que “uses” dos imágenes, la imagen final solo contiene la segunda (nginx:alpine) + lo que copies de la primera.
+Es mucho más eficiente que instalar Node en producción.

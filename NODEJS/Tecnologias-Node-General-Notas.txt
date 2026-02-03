@@ -1,0 +1,179 @@
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++EJECUTAR NODE PORTABLE
+
+
+::--------------------------------------------------------------------------------------
+::1-DESCARGAR ZIP (VERSION 22.21.1)
+https://nodejs.org/dist/
+https://nodejs.org/dist/v22.21.1/node-v22.21.1-win-x86.zip
+
+
+::--------------------------------------------------------------------------------------
+::2-Crea una carpeta en C:\
+:: ABRIR SIMBOLO DEL SISTEMA (CMD)
+cd C:\
+mkdir C:\nodev22
+cd C:\nodev22
+
+
+::--------------------------------------------------------------------------------------
+::3-DESCOMPRIMIR zip descargado dentro de la carpeta: cd C:\nodev22
+::DEBE QUEDAR ASI:
+C:\nodev22
+ ├─ node.exe
+ ├─ npm.cmd
+ ├─ npx.cmd
+ ├─ node_modules\
+
+
+
+
+::--------------------------------------------------------------------------------------
+::4-Ejecuta Node (sin instalar nada)
+C:\nodev22\node.exe -v
+
+
+
+::--------------------------------------------------------------------------------------
+::5-CREAR CARPETAS
+mkdir C:\nodev22\npm-global
+mkdir C:\nodev22\npm-cache
+
+
+
+::--------------------------------------------------------------------------------------
+6-Configurar npm local al portable
+C:\nodev22\npm.cmd config set prefix C:\nodev22\npm-global
+C:\nodev22\npm.cmd config set cache C:\nodev22\npm-cache
+
+
+
+::--------------------------------------------------------------------------------------
+::7-VALIDAR
+C:\nodev22\npm.cmd -v
+C:\nodev22\npx.cmd -v
+C:\nodev22\node -v
+
+
+::--------------------------------------------------------------------------------------
+::8-Agregar al PATH del usuario SIN admin
+::Ruta				Para qué sirve
+::C:\nodev22			Para que node y npm funcionen
+::C:\nodev22\npm-global		Para que funcionen comandos globales (vite, eslint, nodemon, etc.)
+
+:: EJECUTAR ESTOS COMANDOS
+setx PATH "%PATH%;C:\nodev22"
+setx PATH "%PATH%;C:\nodev22\npm-global"
+
+:: ABRIR NUEVA CONSOLA EN CUALQUIER RUTA
+
+:: MUESTRA EL PATH EN LA CONSOLA
+echo %PATH%
+
+:: VALIDA VERSION
+node -v
+npm -v
+npx -v
+
+
+
+
+-------------------------------------------
+::9-INSTALAR LIBRERIA
+C:\nodev22\npm.cmd install -g http-server
+
+
+-------------------------------------------
+::10- EJECUTAR LIBRERIA
+C:\nodev22\npm-global\http-server.cmd
+
+:: VALIDAR EN EL NAVEGADOR
+http://localhost:8080
+
+::INFORMACION ADICIONAL
+Arranca un servidor web estático que:
+	Usa Node.js
+	Sirve archivos desde la carpeta actual
+	Usa HTTP
+
+Perfecto para:
+	Probar builds de React
+	Servir SPAs
+	Testing local sin Apache
+
+Ejemplo práctico
+	Entrar a la ruta del proyecto: C:\proyectos\react-app\dist
+	Ejecuta: C:\nodev22\npm-global\http-server.cmd
+
+::--------------------------------------------------
+::11-PERMITIR EJECUCION DE .PS1 DESDE POWERSHELL
+Unblock-File C:\nodev22\*.ps1
+
+:: CAMBIAR POLITICAS PARA EL USUARIO ACTUAL
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+:: VER POLITICAS ACTUALES
+Get-ExecutionPolicy -List
+
+
+
+
+
+
+::-------------------------------------------
+::12-Ejecuta Vite usando npx portable
+
+::CREAR PROYECTO
+npm create vite@latest 1-mi-app-node-portable
+cd 1-mi-app-node-portable
+npm install
+npm run dev
+
+::ELEGIR LA SIGUIENTE CONFIG
+::◇  Select a framework:
+::│  React
+::│
+::◇  Select a variant:
+::│  JavaScript
+::│
+::◇  Use rolldown-vite (Experimental)?:
+::│  No
+::│
+::◆  Install with npm and start now?
+::│  ● Yes / ○ No
+
+::ABRIR EN EL NAVEGADOR
+Local: http://localhost:5173
+
+::COMANDO PARA CONSTRUIR WEB (FRONT)
+npm run build
+
+
+
+
+
+-------------------------------------------
+-RELEVANTE
+
+.Por defecto npm intenta usar: C:\Users\TuUsuario\AppData\Roaming\npm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

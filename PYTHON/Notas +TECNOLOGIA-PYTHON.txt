@@ -155,7 +155,7 @@ PROGRAMAS PYTHON
 NOTAS
 *Se creo tada la estructura y paquetes manualmente
 *se crearon todos los modulos/script manualmente incluyendo los __init__.py
-*CARPETA "__pycache__" se genera automaticamente cuando se 
+*CARPETA "__pycache__" se genera automaticamente cuando se ejecuta la aplicacion y sirve para almacenar archivos compilados de Python y así hacer que los programas se ejecuten más rápido.
 
 
 --------------------------------------------------------

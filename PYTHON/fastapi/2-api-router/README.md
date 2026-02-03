@@ -1,4 +1,37 @@
 
+
+
+
+
+
+Bloques de código
+<pre> ```bash pip install -r requirements.txt ``` </pre>
+
+
+
+Título
+
+Descripción
+
+Estructura del proyecto
+
+Requisitos
+
+Instalación
+
+Uso
+
+Notas importantes
+
+
+
+## 📑 Contenido
+- [Instalación](#-instalación)
+- [Uso](#-uso)
+
+
+
+
 **********************************************************************************************************************************************************************
 1-ESTRUCTURA
 
@@ -12,10 +45,6 @@ proyecto/
 │   ├── config/             # Configuraciones
 │   │   ├── __init__.py
 │   │   └── settings.py
-│   │
-│   ├── models/             # Lógica de negocio
-│   │   ├── __init__.py
-│   │   └── servicio.py
 │   │
 │   └── models/             # Modelos (clases, entidades, esquemas)
 │       ├── __init__.py
