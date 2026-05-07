@@ -1,0 +1,52 @@
+
+## -----------------------------------------------------------------------
+# Título principal
+
+## Subtítulo
+
+Este es un texto normal.
+
+- Item 1
+- Item 2
+- Item 3
+
+**Texto en negrita**
+
+*Texto en cursiva*
+
+`codigo`
+
+```python
+print("Hola")
+
+
+## -----------------------------------------------------------------------
+
+Links
+[Google](https://google.com)
+
+Imágenes
+![Texto](imagen.png)
+
+Tablas
+| Nombre | Edad |
+|---|---|
+| Ana | 20 |
+| Luis | 25 |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

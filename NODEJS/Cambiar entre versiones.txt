@@ -1,0 +1,77 @@
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1-ELIMINAR VERSION ANTERIOR DEL PATH
+#PRIMERO VALIDAR
+[Environment]::GetEnvironmentVariable("Path", "User")
+
+
+#GUARDAR PATH EN VARIABLE TEMPORAL
+$path = [Environment]::GetEnvironmentVariable("Path", "User")
+
+#ACTUALIZAR PATH
+$path = $path -replace ";C:\\nodev22\\npm-global", ""
+$path = $path -replace ";C:\\nodev22", ""
+
+[Environment]::SetEnvironmentVariable("Path", $path, "User")
+
+
+#VALIDAR NUEVAMENTE
+[Environment]::GetEnvironmentVariable("Path", "User")
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2-AGREGAR LA NUEVA
+
+
+# Obtener PATH actual de usuario
+$path = [Environment]::GetEnvironmentVariable("Path", "User")
+
+# Agregar nuevas rutas
+$path = "$path;C:\nodev227;C:\nodev227\npm-global"
+
+# Guardarlo nuevamente
+[Environment]::SetEnvironmentVariable("Path", $path, "User")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,210 @@
+
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++OBJETIVOS
+
+-ESCRIBIR
+
+-FUNDAMENTOS
+	.VARIABLES
+	.ESTRUCTURAS DE DATOS
+	.PASO POR REFERENCIA
+	.ESTRUCTURAS DE CONTROL
+	.FUNCIONES
+	.IMPORTACIONES
+
+
+-ENTENDER MI BASE PARA SCRIPT PYTHON
+
+-DEMO CHIDO
+
+-DESARROLLAR ARQUITECTURA Y PATRON REUTILIZABLE PARA APLICACIONES WEB Y AUTOMATIZACIONES
+	.DECIDIR SI USAR POO O NO
+
+-THREADS
+	.CUANDO USAR MULTI HILOS
+	.SIMULACION: AUTOMATIZACION QUE CONSUME UNA API. LA API CREADO POR MI DEBE DEMORAR ALEATORIAMENTE EN RESPONDER. 
+	LA AUTOMATIZACION DEBE SE CAPAS DE ESTAR DISPONIBLE PARA OTRA TAREA MIENSTRAS ESPERA LA RESPUESTA DE LA API. 
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DUDAS
+
+-COMO CREAR SERVICIOS CON PYTHON? ¿QUE ES UN SERVICIO HECHO CON PYTHON?
+-DIFERENTES TIPOS DE PROGRAMAS HECHOS CON PYTHON
+
+
+-PATRON: Strategy + Repository
+-ARQUITECTURA HEXAGONAL
+
+-Evaluar el rendimiento de un programa en python
+
+-tipos de ejecucion  para un servicio y un microservicio? usando worker? otros?
+
+-programas modulares
+	.Programa que al añadir un nuevo modulo/archivo el programa automaticamente lo ejecute
+
+-Organizar las ideas:
+	.Hilos
+	.Ejecucion
+	.Worker
+	.Servicio
+	.Arquitectura
+
+
+
+
+
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++FUNDAMENTOS DEL INTERPRETE DE PYTHON
+
+---------------------------------------------------------------
+-PIPELINE DE EJECUCION DE CODIGO PYTHON
+Escribes código Python (.py)
+CPython lo compila a bytecode
+La PVM (escrita en C) interpreta ese bytecode y lo ejecuta
+
+
+---------------------------------------------------------------
+-CPYTHON Y LA PVM (Python Virtual Machine)
+
+CPython es la implementación de referencia de Python: el programa completo que instalas cuando descargas Python desde Python Software Foundation. Está escrito principalmente en C.
+
+Incluye varias piezas importantes:
+el compilador que transforma .py en bytecode
+la gestión de memoria (incluido el recolector de basura)
+las bibliotecas estándar
+el intérprete interactivo
+y la PVM (Python Virtual Machine)
+La PVM no es algo separado de CPython. Es solo una parte interna de CPython: el mecanismo que ejecuta el bytecode instrucción por instrucción.
+
+Una analogía útil:
+Si CPython fuera un computador completo,
+la PVM sería más parecido a la CPU
+
+
+---------------------------------------------------------------
+-Manejo de memoria
+
+CPython usa principalmente:
+
+Conteo de referencias
+Garbage collector adicional (para ciclos)
+
+
+---------------------------------------------------------------
+Tipado dinámico y objetos
+
+En CPython:
+
+Todo es un objeto
+Las variables son referencias, no cajas de datos
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++CONCEPTOS DE PYTHON
+
+
+---------------------------------------------------------------
+-VARIABLES
+
+---------------------------------------------------------------
+-ESTRUCTURAS DE CONTROL
+
+
+---------------------------------------------------------------
+-ESTRUCTURAS DE DATOS
+
+
+---------------------------------------------------------------
+-SCOPE DE VARIABLES
+
+
+---------------------------------------------------------------
+-ARITMETICA BASICA DE PYTHON
+
+
+---------------------------------------------------------------
+-MULTI-THREAD VS MULTI-PROCESING
+
+Diferencia clave
+Característica	Multithreading	Multiprocessing
+Memoria	Compartida	Separada
+GIL	Sí afecta	No afecta
+Rendimiento CPU	Limitado	Alto (paralelismo real)
+Comunicación	Fácil	Más compleja
+Uso ideal	I/O	CPU intensivo
+
+Regla práctica
+Si tu programa espera cosas → usa threads
+Si tu programa calcula cosas → usa processes
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DUDAS
+
+
+-COMO SE SI UN PROGRAMA DE PYTHON TIENE HABILITADO O NO EL GIL?
+
+-Como configurar un hilo para que se ejecute siempre en una frecuencia exacta, sin usar sleep
+Ejemplo: se ejecute a los 5 segundos de cada minuto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+------------------------------------------------------------------------------------------------------------
+-
+
+
+Explicame que hace estos dos archivos de codigo:
+

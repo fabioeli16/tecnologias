@@ -1,0 +1,228 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PATH ORIGINAL (PENDIENTE REVISAR SI DEBE RESTAURAR ALGO)
+C:\app\product\19.0.0\client_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files (x86)\NetSarang\Xshell 8\;c:\sqlany50\win32;c:\sybtools\win32;C:\app\product\19.0.0\client_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files (x86)\NetSarang\Xshell 8\;c:\sqlany50\win32;c:\sybtools\win32;C:\Users\45822051\AppData\Local\Microsoft\WindowsApps;C:\Users\45822051\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\45822051\AppData\Local\Programs\Git\cmd;C:\nodev22\npm-global;C:\nodev22
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++EJECUTAR NODE PORTABLE
+
+#--------------------------------------------------------------------------------------
+#INICIALMENTE
+#LOS CAMDOS SON COMPATIBLES CON PS EN WINDOWS
+
+
+
+#--------------------------------------------------------------------------------------
+#1-DESCARGAR ZIP (VERSION 22.21.1)
+https://nodejs.org/dist/
+https://nodejs.org/dist/v22.7.0/node-v22.7.0-win-x64.zip
+
+
+::--------------------------------------------------------------------------------------
+::2-Crea una carpeta en C:\
+:: ABRIR SIMBOLO DEL SISTEMA (CMD)
+cd C:\
+mkdir C:\nodev227
+cd C:\nodev227
+
+
+::--------------------------------------------------------------------------------------
+::3-DESCOMPRIMIR zip descargado dentro de la carpeta: cd C:\nodev22
+::DEBE QUEDAR ASI:
+C:\nodev227
+ ├─ node.exe
+ ├─ npm.cmd
+ ├─ npx.cmd
+ ├─ node_modules\
+
+
+
+
+::--------------------------------------------------------------------------------------
+::4-Ejecuta Node (sin instalar nada)
+C:\nodev227\node.exe -v
+
+
+
+::--------------------------------------------------------------------------------------
+::5-CREAR CARPETAS
+mkdir C:\nodev227\npm-global
+mkdir C:\nodev227\npm-cache
+
+
+
+::--------------------------------------------------------------------------------------
+6-Configurar npm local al portable
+C:\nodev227\npm.cmd config set prefix C:\nodev227\npm-global
+C:\nodev227\npm.cmd config set cache C:\nodev227\npm-cache
+
+
+
+::--------------------------------------------------------------------------------------
+::7-VALIDAR
+C:\nodev227\npm.cmd -v
+C:\nodev227\npx.cmd -v
+C:\nodev227\node -v
+
+
+::--------------------------------------------------------------------------------------
+::8-Agregar al PATH del usuario SIN admin
+::Ruta				Para qué sirve
+::C:\nodev22			Para que node y npm funcionen
+::C:\nodev22\npm-global		Para que funcionen comandos globales (vite, eslint, nodemon, etc.)
+
+# Obtener PATH actual de usuario
+$path = [Environment]::GetEnvironmentVariable("Path", "User")
+
+# Agregar nuevas rutas
+$path = "$path;C:\nodev227;C:\nodev227\npm-global"
+
+# Guardarlo nuevamente
+[Environment]::SetEnvironmentVariable("Path", $path, "User")
+
+#ABRIR NUEVA CONSOLA EN CUALQUIER RUTA
+
+:: MUESTRA EL PATH EN LA CONSOLA
+[Environment]::GetEnvironmentVariable("Path", "User")
+
+:: VALIDA VERSION
+node -v
+npm -v
+npx -v
+
+
+
+
+
+$path = [Environment]::GetEnvironmentVariable("Path", "User")
+
+# Agregar nuevas rutas
+$path = "$path;C:\Users\45822051\AppData\Local\Microsoft\WindowsApps"
+
+# Guardarlo nuevamente
+[Environment]::SetEnvironmentVariable("Path", $path, "User")
+
+
+
+
+
+
+
+
+-------------------------------------------
+::9-INSTALAR LIBRERIA
+C:\nodev227\npm.cmd install -g http-server
+
+
+-------------------------------------------
+::10- EJECUTAR LIBRERIA
+C:\nodev227\npm-global\http-server.cmd
+
+:: VALIDAR EN EL NAVEGADOR
+http://localhost:8080
+
+::INFORMACION ADICIONAL
+Arranca un servidor web estático que:
+	Usa Node.js
+	Sirve archivos desde la carpeta actual
+	Usa HTTP
+
+Perfecto para:
+	Probar builds de React
+	Servir SPAs
+	Testing local sin Apache
+
+Ejemplo práctico
+	Entrar a la ruta del proyecto: C:\proyectos\react-app\dist
+	Ejecuta: C:\nodev22\npm-global\http-server.cmd
+
+::--------------------------------------------------
+::11-PERMITIR EJECUCION DE .PS1 DESDE POWERSHELL
+Unblock-File C:\nodev227\*.ps1
+
+:: CAMBIAR POLITICAS PARA EL USUARIO ACTUAL
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+:: VER POLITICAS ACTUALES
+Get-ExecutionPolicy -List
+
+
+
+
+
+
+::-------------------------------------------
+::12-Ejecuta Vite usando npx portable
+
+::CREAR PROYECTO
+npm create vite@latest 1-mi-app-node-portable
+cd 1-mi-app-node-portable
+npm install
+npm run dev
+
+::ELEGIR LA SIGUIENTE CONFIG
+::◇  Select a framework:
+::│  React
+::│
+::◇  Select a variant:
+::│  JavaScript
+::│
+::◇  Use rolldown-vite (Experimental)?:
+::│  No
+::│
+::◆  Install with npm and start now?
+::│  ● Yes / ○ No
+
+::ABRIR EN EL NAVEGADOR
+Local: http://localhost:5173
+
+::COMANDO PARA CONSTRUIR WEB (FRONT)
+npm run build
+
+
+
+
+
+-------------------------------------------
+-RELEVANTE
+
+.Por defecto npm intenta usar: C:\Users\TuUsuario\AppData\Roaming\npm
+
+
+
+::--------------------------------------------------------------------------------------
+#VALIDAR QUE QUEDARA INSTALADO
+
+npm -v
+nvm -v
+
+
+
+
+::--------------------------------------------------------------------------------------
+#ELIMINAR VARIABLES DE ENTORNO DE VERSIONES ANTERIORES USANDO PS
+#PRIMERO VALIDAR
+[Environment]::GetEnvironmentVariable("Path", "User")
+
+
+#GUARDAR PATH EN VARIABLE TEMPORAL
+$path = [Environment]::GetEnvironmentVariable("Path", "User")
+
+#ACTUALIZAR PATH
+$path = $path -replace ";C:\\nodev22\\npm-global", ""
+$path = $path -replace ";C:\\nodev22", ""
+
+[Environment]::SetEnvironmentVariable("Path", $path, "User")
+
+
+#VALIDAR NUEVAMENTE
+[Environment]::GetEnvironmentVariable("Path", "User")
+
+
+
+
+
+
+

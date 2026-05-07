@@ -1,0 +1,253 @@
+
+
+****************************************************************************************************************************************************
+****************************************************************************************************************************************************
+****************************************************************************************************************************************************
+#INSTALACION
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
++ELK
+#Necesita java instalado
+
+#Actualizar repo
+sudo apt update && sudo apt upgrade -y
+
+#**********************************************
+#1-INSTALAR ELASTIC
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
+
+sudo apt-get install apt-transport-https
+
+echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
+
+sudo apt-get update && sudo apt-get install elasticsearch
+
+
+
+
+
+
+#********************************************************************************************************
+#2-INSTALAR  KIBANA Y LOGSTASH
+#Se demora como 10 a 15 minutos
+sudo apt-get install kibana logstash
+
+
+
+
+#********************************************************************************************************
+#3-CONFIGURACION PUERTOS E IP
+sudo -i
+sudo nano /etc/elasticsearch/elasticsearch.yml
+#Descomentar dos lineas:	#network.host: 192.168.0.1			#http.port: 9200
+#Modificarlas por		network.host: 0.0.0.0				http.port: 9200
+
+sudo nano /etc/kibana/kibana.yml
+#Modificaruna linea por otra
+#Original:			server.host:"localhost"				Modificacion: server.host:"0.0.0.0"
+
+
+#ELASTIC
+#EN LA VERSION 8 SE GENERA UNA CONSTRASEÑA POR DEFECTO, SE EJECUTA UN COMANDO PARA GENERAR LA CONTRASEÑA Y EL USUARIO POR DEFECTO ES elastic
+#COMANDO QUE GENERA CONTRASEÑA ELASTIC
+/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
+
+
+#********************************************************************************************************
+#4-MANIPULAR SERVICIOS PARA ARRANCARLOS
+//INICIAR
+systemctl start elasticsearch
+systemctl start logstash
+systemctl start kibana
+
+//DETENER
+systemctl stop elasticsearch
+systemctl stop logstash
+systemctl stop kibana
+
+//PRUEBAS SERVICIOS
+systemctl status elasticsearch
+systemctl status logstash
+systemctl status kibana
+
+
+#********************************************************************************************************
+#5-CONFIGURAR TOKEN PARA KIBABNA
+#SE EJECUTA
+sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
+
+#SE PEGA TOKEN GENERADO EN LA VENTANA DE KIBANA CORRIENDO EN EL NAVEGADOR
+#el token es como este: eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTkyLjE2OC4xMC4xNTg6OTIwMCJdLCJmZ3IiOiIxZGFhN2I5NzIyZDc4MmQ3ZmJlOWVhMTU5MTNlZWIwOWIzY2ZhMDBiMGYxNzc1ZjBlYTBlOGMxYTg3ZGZjMjU2Iiwia2V5IjoiWnpsVjdwZ0JpbXlwdktzQ0NNaXA6UmlHNkEzbFBUeFh4bmZST0J6Nmc1QSJ9
+
+#SE EJECUTA ESTE COMANDO
+sudo /usr/share/kibana/bin/kibana-verification-code
+
+#SE PEGA EL CODIGO EN LA VENTANA DE KIBANA CORRIENDO EN EL NAVEGADOR
+#ES COMO ESTE: 948 317
+
+#********************************************************************************************************
+#informacion general
+
+#ELASTIC
+#USUARIO: elastic
+#CONTRASEÑA: X8NjYeaAtFa-hI5rRKS8
+#puerto e IP: https://192.168.10.158:9200/
+curl -u elastic https://localhost:9200 -k 
+#se digita la contraseña: X8NjYeaAtFa-hI5rRKS8
+
+#KIBANA
+#POR DEFECTO CORRE EN EL PUERTO 5601
+https://192.168.10.158:5601/
+
+#LOGSTASH
+
+#VALIDAR VERSIONES
+/usr/share/kibana/bin/kibana --version
+/usr/share/logstash/bin/logstash --version
+
+apt list --installed | grep elastic
+
+dpkg -l | grep elasticsearch
+dpkg -l | grep logstash
+dpkg -l | grep kibana
+
+
+#********************************************************************************************************
+#PASOS EN CASO DE REINICIO
+
+
+#********************************************************************************************************
+#INFORMACION DE LA CONSOLA DESPUES DE INSTALAR ELASCTI (PASO 1)
+--------------------------- Security autoconfiguration information ------------------------------
+
+Authentication and authorization are enabled.
+TLS for the transport and HTTP layers is enabled and configured.
+
+The generated password for the elastic built-in superuser is : yPagGqGV4pcmQd7GHNiX
+
+If this node should join an existing cluster, you can reconfigure this with
+'/usr/share/elasticsearch/bin/elasticsearch-reconfigure-node --enrollment-token <token-here>'
+after creating an enrollment token on your existing cluster.
+
+You can complete the following actions at any time:
+
+Reset the password of the elastic built-in superuser with 
+'/usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic'.
+
+Generate an enrollment token for Kibana instances with 
+ '/usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana'.
+
+Generate an enrollment token for Elasticsearch nodes with 
+'/usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node'.
+
+-------------------------------------------------------------------------------------------------
+### NOT starting on installation, please execute the following statements to configure elasticsearch service to start automatically using systemd
+ sudo systemctl daemon-reload
+ sudo systemctl enable elasticsearch.service
+### You can start elasticsearch service by executing
+ sudo systemctl start elasticsearch.service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+01/09/2025
+****************************************************************************************************************************************************
+****************************************************************************************************************************************************
+****************************************************************************************************************************************************
+
+
+----------------------------------------------------------------------------------------------------
+INSTALACION KIBANA
+192.168.10.158
+https://192.168.10.158:9200/
+
+
+curl -u elastic -k "https://192.168.10.158:9200/etldocumental/_count?pretty"
+X8NjYeaAtFa-hI5rRKS8
+--------------------------------------------
+KIBANA CREAR TABLERO
+
+1-CREAR DATA VIEW
+http://192.168.10.158:5601/app/management/kibana/dataViews
+
+
+2-CREAR TABLERO
+
+--------------------------------------------------------------------
++PENDIENTES KIBANA
+-CREAR USUARIOS 
+	-CON ROL SOLO DE VISUALIZAR
+
+-CREAR ESPACIOS
+
+
++PENDIENTES ELASTIC
+-ENTENDER ARQUITECTURA
+
+
+
++DOCKER 
+-CREAR CONTENEDOR SOLO DE ELASTIC
+	CON SSL
+	CON USUARIO Y CONTRASEÑA
+	CON VOLUMEN COMPARTIDO
+	CON RED COMPARTIDA
+
+
+
+
++LOGSTASH
+-CREAR EVENTO EN SEGUNDO PLANO: es decir que no interrumpa la consola
+
+-Crear mas de un evento escuchando cambios en un log cada uno
+
+-crear un solo evento que escuche los cambios en varios logs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

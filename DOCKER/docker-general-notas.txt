@@ -20,7 +20,11 @@
 
 
 
+-BIND MOUNT
+	Config y código → bind mount
 
+-VOLUMEN DOCKER
+	Datos y estado → volumen Docker
 
 
 
@@ -75,8 +79,22 @@ docker build \
 
 
 
+#***************************************************************************************************************************************************
+#***************************************************************************************************************************************************
+#***************************************************************************************************************************************************
++DEMOS
 
 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1-COMPOSE SIMPLE PARA ELK
+
+.Solo tres servicios
+.que use volumenes para datos
+.que use bind mount para configuracion y codigo ejecutable
+.sin env
+.sin pariticiones para elastic
+.No usa DOCKERFILE PARA PERSONALIZAR IMAGENES
 
 
 
