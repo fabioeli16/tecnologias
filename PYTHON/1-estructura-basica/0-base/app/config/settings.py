@@ -1,10 +1,10 @@
 import os
-from dotenv import load_dotenv
+import dotenv
 
 
 #VARIABLES------------------------------------------------------------------
 # VARIABLES DE ENTORNO
-load_dotenv()                       # Carga las variables del archivo .env
+dotenv.load_dotenv()                       # Carga las variables del archivo .env
 APP = os.getenv("APP_ENV")
 PROJECT = os.getenv("PROJECT_NAME")
 ROOT = os.getenv("PROJECT_ROOT_ENV")    #VARIABLE DEFINIDA POR LA POWER SHELL

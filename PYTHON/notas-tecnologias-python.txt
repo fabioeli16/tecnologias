@@ -1,4 +1,146 @@
 
+
+
+07-11-2026
+**********************************************************************************************************************************************************
+***********************************************************************************************************************************************************
+***********************************************************************************************************************************************************
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++TEMARIO
+
+------------------------------------------------------------
+-Módulo 1 · Fundamentos (1 HORA X DIARA X 1 SEMANA)		11 AL 15 DE NOVIEMBRE		DE 07 A 08 DE LA NOCHE
+
+.Variables y tipos básicos: int, float, str, bool, None
+.Type hints y mypy
+.Operadores aritméticos, de comparación y lógicos
+.Entrada y salida con input(), print() y f-strings
+.ESTRUCTURAS DE CONTROL
+	Condicionales: if / elif / else y match
+	Bucles: for, while, range, break y continue
+
+.Práctica: calculadora, adivina el número, tabla de multiplicar
+
+------------------------------------------------------------
+Módulo 2 · Estructuras de datos (1 semana)
+.Listas, tuplas, diccionarios y conjuntos
+.Indexación y slicing
+.Métodos comunes de cada estructura
+.Comprensiones de listas y de diccionarios
+.Cuándo conviene usar cada estructura
+.Práctica: agenda de contactos, contador de palabras en un texto
+
+------------------------------------------------------------
+Módulo 3 · Funciones y modularidad (1 semana)
+Definir funciones, parámetros, return y valores por defecto
+*args, **kwargs y alcance de variables
+Funciones lambda, map, filter y sorted con key
+Módulos, paquetes e import
+La biblioteca estándar: math, random, datetime, os, pathlib
+Práctica: separar un programa anterior en varios módulos
+
+
+------------------------------------------------------------
+Módulo 4 · Archivos y errores (1 semana)
+Leer y escribir archivos de texto con with open(...)
+Trabajar con CSV y JSON
+Excepciones: try / except / else / finally y lanzar las tuyas con raise
+Depuración con print, el debugger de VS Code y logging
+Práctica: gestor de gastos que guarda los datos en JSON
+
+------------------------------------------------------------
+Módulo 5 · Programación orientada a objetos (2 semanas)
+Clases, objetos, __init__ y self
+Atributos y métodos de instancia y de clase
+Herencia, polimorfismo y composición
+Métodos especiales: __str__, __repr__, __eq__, __len__
+@property y dataclasses
+Práctica: sistema de inventario o de biblioteca
+
+------------------------------------------------------------
+Módulo 6 · Python intermedio (2 semanas)
+Iteradores y generadores (yield)
+Decoradores
+Context managers
+Type hints y mypy
+Módulos collections (Counter, defaultdict, deque) e itertools
+Expresiones regulares (re)
+
+------------------------------------------------------------
+Módulo 7 · Buenas prácticas (1 semana, en paralelo)
+Estilo de código con PEP 8, y las herramientas ruff y black
+Pruebas automáticas con pytest
+Control de versiones con Git y GitHub
+Estructura de un proyecto y el archivo requirements.txt o pyproject.toml
+
+------------------------------------------------------------
+Módulo 8 · Especialización (elige una o dos ramas)
+Rama	Qué aprender
+Datos	NumPy, pandas, matplotlib/seaborn, SQL con sqlite3 o SQLAlchemy
+Matemáticas y ciencia	NumPy, SymPy, SciPy, gráficas 3D
+Web / APIs	requests, FastAPI o Flask, bases de datos
+Automatización	Scripts de sistema, web scraping (BeautifulSoup), Excel con openpyxl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12/05/2026
+***********************************************************************************************************************************
+***********************************************************************************************************************************
+***********************************************************************************************************************************
+
+
+
+En Python, un modelo de ejecución describe cómo, cuándo y bajo qué mecanismo se ejecuta un programa. No es una única característica de Python; depende de cómo diseñes y despliegues la aplicación.
+
+Para tu caso de automatización que monitorea varios endpoints SOAP, es especialmente importante elegir el modelo adecuado.
+
+Principales modelos de ejecución en Python
+Modelo						¿Cómo funciona?											Ejemplo
+Ejecución única				El programa inicia, hace su trabajo y termina	python main.py
+Proceso continuo			El programa permanece ejecutándose y realiza tareas periódicamente	Monitor de endpoints cada 60 segundos
+Programado (Scheduler)		Se ejecuta en determinados horarios o intervalos	cron, APScheduler
+Bajo demanda / API			El programa espera peticiones HTTP y ejecuta una acción	FastAPI / Flask
+Multihilo (Threading)		Varias tareas pueden ejecutarse concurrentemente usando hilos	Consultar 20 SOAP simultáneamente
+Asíncrono (AsyncIO)			Maneja muchas operaciones de I/O concurrentemente mediante async/await	Muchas llamadas HTTP simultáneas
+Multiproceso				Utiliza varios procesos independientes	Tareas intensivas de CPU
+Event-driven				El código reacciona a eventos o mensajes	RabbitMQ, Kafka, Redis
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++APRENDIZAJE
+
+
+
+
+------------------------------------------
+-DECICIONES DE NORMALIZACION (DECIDIR SI USAR)
+
+.NO USAR PARTICULARIDADES DEL LENGUJE. EJEMPLO: EN VEZ DE USAR WITH PARA CONTROLAR RECURSOS USANDO UN CONTEXTO,
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++DEMOS
+DEMO DE CONCURRENCIA
+
+DEMO DE SINCRONIZACION DE HILOS
+
+DEMO DE CALCULO DE EJECUCION DE UN CICLO
+
+
 **************************************************************************************************************************************************************
 **************************************************************************************************************************************************************
 **************************************************************************************************************************************************************
@@ -59,6 +201,7 @@
 	.Worker
 	.Servicio
 	.Arquitectura
+	.Patron
 
 
 

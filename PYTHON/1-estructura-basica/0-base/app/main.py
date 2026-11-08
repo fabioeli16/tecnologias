@@ -1,10 +1,10 @@
-from app.config.settings import DEBUG, get_settings
-import requests
+import app.config.settings as configuraciones
 
 
 def main():
-    print(DEBUG)
-    print(get_settings())
+    print(configuraciones.DEBUG)
+    print(configuraciones.get_settings())
+
 
 if __name__ == "__main__":
     main()
