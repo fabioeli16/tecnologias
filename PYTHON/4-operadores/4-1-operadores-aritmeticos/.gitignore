@@ -1,0 +1,47 @@
+# ===============================
+# Entornos virtuales
+# ===============================
+venv/
+venvwindows/
+.env/
+.venv/
+ENV/
+env/
+
+# ===============================
+# Python cache / binarios
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===============================
+# Variables de entorno
+# ===============================
+.env
+.env.local
+.env.dev
+.env.prod
+#.env.example
+
+# ===============================
+# Logs
+# ===============================
+*.log
+
+# ===============================
+# Sistema operativo
+# ===============================
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux / macOS
+.DS_Store
+
+# ===============================
+# IDEs / Editores
+# ===============================
+.vscode/
+.idea/
+*.swp

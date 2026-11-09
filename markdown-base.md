@@ -4,8 +4,9 @@
 
 - [Introducción](#introducción)
 - [Instalación](#instalación)
-- [Uso](#uso)
-- [Configuración Avanzada](#configuración-avanzada)
+- [Prompts](#Prompts)
+- [Dudas](#Dudas)
+- [Conclusiones](#Conclusiones)
 
 ---
 

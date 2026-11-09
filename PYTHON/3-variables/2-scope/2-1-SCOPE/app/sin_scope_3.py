@@ -1,0 +1,11 @@
+#LAS ESTRUCTURAS DE CONTROL DE FLUJO: IF, FOR, WHILE, TRY, WITH, DEF, CLASS NO TIENEN SCOPE
+# YA QUE NO SON BLOQUES DE CODIGO, SINO ESTRUCTURAS DE CONTROL DE FLUJO. 
+# ESTO SIGNIFICA QUE NO PUEDEN CREAR UN NUEVO AMBITO DE VARIABLES, POR LO TANTO, LAS VARIABLES DEFINIDAS DENTRO DE ESTAS ESTRUCTURAS SON ACCESIBLES DESDE EL AMBITO GLOBAL.
+
+
+print("*" * 75)
+print("modulo sin_scope_3.py")
+for i in range(3):
+    print(i)  # 0, 1, 2: la variable i es accesible dentro del ciclo
+
+print(i)  # 2: la variable sigue existiendo después del ciclo

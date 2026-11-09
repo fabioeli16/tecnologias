@@ -19,6 +19,7 @@
 .ESTRUCTURAS DE CONTROL
 	Condicionales: if / elif / else y match
 	Bucles: for, while, range, break y continue
+.Comprensiones
 
 .Práctica: calculadora, adivina el número, tabla de multiplicar
 
