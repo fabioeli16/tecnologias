@@ -1,62 +1,95 @@
 
-**********************************************************************************************************************************************************************
-1-ESTRUCTURA
+# Mi Documento
 
+## Índice
+
+- [Estructura](#Estructura)
+- [Instalación-Ejecucion](#Instalación-Ejecucion)
+- [Introducción](#introducción)
+- [Prompts](#Prompts)
+- [Dudas](#Dudas)
+- [Conclusiones](#Conclusiones)
+
+
+
+
+<!-- ******************************************************************************************************************************-->
+<!-- ******************************************************************************************************************************-->
+# Estructura
+
+```text
 proyecto/
 │
-│
-├── app/                    # Código fuente principal
+├── app/                        # Código fuente principal
 │   ├── __init__.py
-│   ├── main.py             # Punto de entrada de la aplicación
+│   ├── main.py                 # Punto de entrada de la aplicación
 │   │
-│   ├── config/             # Configuraciones
+│   ├── config/                 # Configuraciones
 │   │   ├── __init__.py
 │   │   └── settings.py
 │   │
-│   ├── services/           # Lógica de negocio
+│   ├── services/               # Lógica de negocio
 │   │   ├── __init__.py
 │   │   └── servicio.py
 │   │
-│   ├── utils/              # Funciones auxiliares
+│   ├── utils/                  # Funciones auxiliares
 │   │   ├── __init__.py
 │   │   └── helpers.py
 │   │
-│   └── models/             # Modelos (clases, entidades, esquemas)
+│   └── models/                 # Modelos (clases, entidades, esquemas)
 │       ├── __init__.py
 │       └── modelo.py
 │
-│
-├── venvwindows/                     # Entorno virtual (NO se versiona)
-├── .env                      # Variables de entorno
+├── venvwindows/                # Entorno virtual (NO se versiona)
+├── .env                        # Variables de entorno
 ├── .gitignore
 ├── requirements.txt
 ├── README.md
 └── arrancarenwindows.ps1
+```
 
 
 
 
 
-**********************************************************************************************************************************************************************
-2-EJECUCION
+<!-- ******************************************************************************************************************************-->
+<!-- ******************************************************************************************************************************-->
+# Instalación-Ejecucion
 
----------------------------------------------------------------
-EJECUTAR WINDOWS
-#SE CREA EL ARCHIVO .env con las mismas variables definidas en (.env.example) y asignandoles valor
-tecnologias\PYTHON\1-estructura-basica\1-proyecto\.env
+<!-- ------------------------------------------------------------------------------------ -->
+### EJECUTAR WINDOWS
+Se crea el archivo .env con las mismas variables definidas en (.env.example) y asignandoles valor
 
-# SE INGRESA A LA RUTA (SE DEBE CAMBIAR DEPENDIENDO DE LA MAQUINA DONDE SE EJECUTA) 
+SE INGRESA A LA RUTA (SE DEBE CAMBIAR DEPENDIENDO DE LA MAQUINA DONDE SE EJECUTA): 
 cd tecnologias\PYTHON\1-estructura-basica\1-proyecto
 cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\1-estructura-basica\1-proyecto
 
-#SE EJECUTA LA SHELL
+SE EJECUTA LA SHELL: 
 .\arrancarenwindows.ps1
 
 
 
 
+<!-- ******************************************************************************************************************************-->
+<!-- ******************************************************************************************************************************-->
+## Introducción
 
----------------------------------------------------------------
+
+
+
+<!-- ******************************************************************************************************************************-->
+<!-- ******************************************************************************************************************************-->
+## Prompts
+
+<!-- ******************************************************************************************************************************-->
+<!-- ******************************************************************************************************************************-->
+## Dudas
+
+<!-- ******************************************************************************************************************************-->
+<!-- ******************************************************************************************************************************-->
+## Conclusiones
+
+Texto...
 
 
 
