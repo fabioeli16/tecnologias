@@ -13,6 +13,7 @@
   - [Modulos](#Modulos)
   - [Variables](#Variables)
   - [Operadores](#Operadores)
+  - [Entradas_salidas ](#Entradas_salidas)
   - [Estructuras_datos](#Estructuras_datos)
   - [Contexto_Controlado](#Contexto_Controlado)
   - [Funciones](#Funciones)
@@ -125,7 +126,7 @@ La idea central: datos que entran por parámetros, resultados que salen con retu
 <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 ### Operadores
 
-
+```text
 ┌──────────┬────────────────────────────────────────┬─────────┬───────────┐
 │ Operador │ Nombre                                 │ Ejemplo │ Resultado │
 ├──────────┼────────────────────────────────────────┼─────────┼───────────┤
@@ -143,7 +144,7 @@ La idea central: datos que entran por parámetros, resultados que salen con retu
 ├──────────┼────────────────────────────────────────┼─────────┼───────────┤
 │ **       │ Potencia                               │ 2 ** 3  │ 8         │
 └──────────┴────────────────────────────────────────┴─────────┴───────────┘
-
+```
 
 
 <!-- ---------------------------------------------------------- -->
@@ -170,8 +171,20 @@ Bonus: use % y // para decir si la parte entera del promedio es par o impar, y c
 
 
 
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+### Entradas_salidas
 
 
+<!-- ---------------------------------------------------------- -->
+#### Notas
+
+f-strings (la forma recomendada de formatear)
+
+
+<!-- ---------------------------------------------------------- -->
+#### Prompts
+Python fundamentos. Explicame los conceptos de Entradas y salidas de datos, dame ejemplos claros de codigo y propon un ejercicio practico.
 
 
 
@@ -395,7 +408,7 @@ Dudas:
 
 
 <!-- ------------------------------------------------------ -->
--Módulo 1 · Fundamentos (1 HORA X DIARA X 1 SEMANA)		11 AL 15 DE NOVIEMBRE		DE 07 A 08 DE LA NOCHE
+### Módulo 1 · Fundamentos (1 HORA X DIARA X 1 SEMANA)		11 AL 15 DE NOVIEMBRE		DE 07 A 08 DE LA NOCHE
 
 .Variables y tipos básicos: int, float, str, bool, None
 .Type hints y mypy
@@ -409,8 +422,8 @@ Dudas:
 .Práctica: calculadora, adivina el número, tabla de multiplicar
 
 <!-- ------------------------------------------------------ -->
+### Módulo 2 · Estructuras de datos (1 semana)
 
-Módulo 2 · Estructuras de datos (1 semana)
 .Listas, tuplas, diccionarios y conjuntos
 .Indexación y slicing
 .Métodos comunes de cada estructura
