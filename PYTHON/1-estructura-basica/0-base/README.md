@@ -58,15 +58,18 @@ proyecto/
 
 <!-- ------------------------------------------------------------------------------------ -->
 ### EJECUTAR WINDOWS
-Se crea el archivo .env con las mismas variables definidas en (.env.example) y asignandoles valor
+Se crea el archivo .env con las mismas variables definidas en (.env.example) y asignandoles valor.
 
-SE INGRESA A LA RUTA (SE DEBE CAMBIAR DEPENDIENDO DE LA MAQUINA DONDE SE EJECUTA): 
-cd tecnologias\PYTHON\1-estructura-basica\1-proyecto
-cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\1-estructura-basica\1-proyecto
+Se ingresa a la siguiente ruta (SE DEBE CAMBIAR DEPENDIENDO DE LA MAQUINA DONDE SE EJECUTA): 
+```text
+cd tecnologias\PYTHON\1-estructura-basica\1-proyecto                                        #Relativa al repositorio
+cd C:\1-Yo\Programacion\repositorios\tecnologias\PYTHON\1-estructura-basica\1-proyecto      #Ruta absoluta de windows
+```
 
 SE EJECUTA LA SHELL: 
+```text
 .\arrancarenwindows.ps1
-
+```
 
 
 

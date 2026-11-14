@@ -14,6 +14,7 @@
   - [Variables](#Variables)
   - [Operadores](#Operadores)
   - [Entradas_salidas ](#Entradas_salidas)
+  - [Estructuras_de_control ](#Estructuras_de_control)
   - [Estructuras_datos](#Estructuras_datos)
   - [Contexto_Controlado](#Contexto_Controlado)
   - [Funciones](#Funciones)
@@ -189,6 +190,21 @@ Python fundamentos. Explicame los conceptos de Entradas y salidas de datos, dame
 
 
 
+<!-- ******************************************************************************************************************************-->
+<!-- ******************************************************************************************************************************-->
+<!-- ******************************************************************************************************************************-->
+## Estructuras_de_control
+
+Por defecto, un programa se ejecuta línea por línea, de arriba hacia abajo. Las estructuras de control cambian ese orden. Hay dos grandes tipos:
+
+Condicionales (if, elif, else, match): deciden qué código se ejecuta.
+Bucles (while, for): deciden cuántas veces se ejecuta un bloque.
+
+🔑 En Python, los bloques se definen por la indentación, que normalmente son 4 espacios. Todo lo que está indentado debajo de un if o de un for pertenece a ese bloque.
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+### Condicionales
 
 
 
